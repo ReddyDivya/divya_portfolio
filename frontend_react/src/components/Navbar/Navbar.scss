@@ -40,4 +40,19 @@
     display:flex; //display:flex - set the items on the horizontal(x-axis).
     justify-content: center;
     align-items: center;
+    list-style: none;
+
+    li{
+        margin:0.1rem;
+        cursor:pointer;
+        flex-direction: column;
+
+        div{
+            width:5px;
+            height:5px;
+            background:transparent;
+            border-radius: 50%;
+            margin-bottom:5px;
+        }
+    }
 }
