@@ -26,9 +26,18 @@
         width:90px;
         height:20px;
 
+        //extra large devices - only visible in large devices
         @media screen and (min-width:2000px){
             width:180px;
             height: 40px;
         }
     }
+}
+
+
+.app__navbar-links{
+    flex:1;//sets how a flex item will grow or shrink to fit the space available in its flex container.
+    display:flex; //display:flex - set the items on the horizontal(x-axis).
+    justify-content: center;
+    align-items: center;
 }
