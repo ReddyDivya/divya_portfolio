@@ -1,1 +1,24 @@
+.app__navbar{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem 2rem;
+    background:rgba(255, 255, 255, 0.25);    
+    position: fixed;
 
+    //sets the z-order of a positioned element & its descendants or flex items. Overlapping elements with a larger z-index cover those with a smaller one.
+    z-index: 2;
+
+    //blur - The blur() CSS function applies a blur to the input image.
+    backdrop-filter:blur(4px);//apply graphical effects such as blurring
+    -webkit-backdrop-filter: blur(4px);
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.app__navbar-logo{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+}
