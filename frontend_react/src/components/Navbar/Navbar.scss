@@ -1,8 +1,8 @@
 .app__navbar{
     width:100%;
     display:flex;
-    justify-content:space-between;
-    align-items:center;
+    justify-content:space-between;//justify-content - controls the alignment of items on the horizontal(x-axis).
+    align-items:center;//align-items - controls the alignment of items on the vertical(y-axis).
     padding:1rem 2rem;
     background:rgba(255, 255, 255, 0.25);    
     position: fixed;
@@ -19,6 +19,16 @@
 
 .app__navbar-logo{
     display:flex;
-    justify-content:flex-start;
-    align-items:center;
+    justify-content:flex-start;//justify-content - controls the alignment of items on the horizontal(x-axis).
+    align-items:center;//align-items - controls the alignment of items on the vertical(y-axis).
+
+    img{
+        width:90px;
+        height:20px;
+
+        @media screen and (min-width:2000px){
+            width:180px;
+            height: 40px;
+        }
+    }
 }
