@@ -53,6 +53,38 @@
             background:transparent;
             border-radius: 50%;
             margin-bottom:5px;
-        }
+        }//div
+
+        a {
+            color: var(--gray-color);
+            text-decoration:none;
+            flex-direction: column;
+
+            text-transform: uppercase;
+            font-weight:500;
+
+            /*
+            The transition CSS property is a shorthand property for 
+            transition-property, transition-duration, transition-timing-function, and transition-delay.
+            */
+            transition: all 0.3s ease-in-out;//transition-property, transition-duration, transition-timing-function, and transition-delay
+
+            &:hover{
+                color: var(--secondary-color);
+            }
+        }//a
+
+        &:hover{
+            div{
+                background-color: var(--secondary-color);
+            }
+        }//&:hover
+    }//li
+
+    //not displaying the navbar when width is 900px
+    @media screen and (max-width:900px)
+    {
+        display:none;
     }
-}
+}//.app__navbar-links
+
