@@ -1,6 +1,8 @@
 import React from 'react';
 import {images} from "../../constants";
 import "./Navbar.scss";
+import {HiMenuAlt4, HiX} from "react-icons/hi";
+
 
 const Navbar = () => {
   return (
@@ -20,7 +22,8 @@ const Navbar = () => {
             }
         </ul>
         <div className="app__navbar-menu">
-            
+            <HiMenuAlt4/>
+            <HiX/>
         </div>
     </nav>
   )
