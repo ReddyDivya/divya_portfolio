@@ -158,10 +158,17 @@
                     font-size: 1rem;
                     text-transform: uppercase;
                     font-weight:500;
+                    transition: all 0.3s ease-in-out;//transition-property, transition-duration, transition-timing-function, and transition-delay
+
+                    &:hover{
+                        color: var(--secondary-color);
+                    }
                 }
             }
-
         }
 
+        @media screen and (min-width:900px){
+            display:none;
+        }
     }
 }
