@@ -25,13 +25,15 @@ const Navbar = () => {
             }
         </ul>
         <div className="app__navbar-menu">
-          {/*displaying menu icon*/}
+          {/*displaying menu icon */}
+          {/*setToggle = true - to open up menu */}
             <HiMenuAlt4 onClick={() => setToggle(true)}/>
             {
             toggle && (
               <motion.div whileInView={{x:[300, 0]}}
               transition={{duration:0.85, ease:'easeOut'}}>
                   {/*displaying X icon*/}
+                  {/*setToggle = false - to close menu */}
                   <HiX onClick={() => setToggle(false)}/>
                   <ul>
                     {

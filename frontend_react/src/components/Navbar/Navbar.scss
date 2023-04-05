@@ -107,7 +107,7 @@
 
     div{
         position:fixed;
-        top:0;
+        top:0; //because displaying menubar on top
         bottom:0;
         right:0;
         z-index:5;
@@ -129,6 +129,7 @@
          /* top box shadow */
          box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
 
+         //close icon
         svg{
             width:35px;
             height:35px;
@@ -138,6 +139,28 @@
 
         ul{
             list-style: none;
+            margin:0;
+            padding:0;
+            height:100%;
+            width:100%;
+
+            display:flex;
+            justify-content:flex-start;
+            align-items:flex-start;
+            flex-direction: column;
+
+            li{
+                margin:1rem;
+
+                a{
+                    color: var(--gray-color);
+                    text-decoration: none;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    font-weight:500;
+                }
+            }
+
         }
 
     }
