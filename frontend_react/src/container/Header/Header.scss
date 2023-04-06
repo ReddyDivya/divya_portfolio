@@ -28,7 +28,7 @@
     }
     
     //tablet & mobile devices shows in column, PC shows in row
-    @media screen and (max-width: 1300px) {
+    @media screen and (max-width: 1200px) {
       flex-direction: column;
     }
   
@@ -46,7 +46,7 @@
     align-items:flex-start;
     height:100%;
 
-    @media screen and (max-width:1300px){
+    @media screen and (max-width:1200px){
         width:100%;
         margin-right:0rem;
     }
@@ -89,7 +89,7 @@
     }
 
     //above the tablet & mobile size
-    @media screen and (max-width:1300px){
+    @media screen and (max-width:1200px){
         justify-content: flex-start;
         align-items:flex-start;
     }
@@ -148,7 +148,7 @@
         }
     }
 
-    @media screen and (max-width:1300px){
+    @media screen and (max-width:1200px){
         width:100%;
         flex-direction: row;
         flex-wrap: wrap;
@@ -184,7 +184,7 @@
         height:90%;
     }
 
-    @media screen and (max-width:1300px){
+    @media screen and (max-width:1200px){
         margin:2rem 0;
     }
 }
