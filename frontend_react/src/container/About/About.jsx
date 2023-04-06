@@ -5,15 +5,15 @@ import {images} from "../../constants";
 
 const abouts = [
       {title:'Web Development', description: 'I am a good Web Developer', imgURL : images.about01 },
-      {title:'Web Design', description: 'I am a good Web Design', imgURL : images.about02 },
-      {title:'UI/UX Design', description: 'I am a good UI/UX Design', imgURL : images.about03 }
+      {title:'Frontend Development', description: 'I am a good Frontend Developer', imgURL : images.about02 },
+      {title:'UI/UX Design', description: 'I am a good UI/UX Design', imgURL : images.about04 }
   ];
 
 const About = () => {
   return (
     <>
     <h2 className="head-text">I know that 
-    <span>Good Design</span> <br/> means <span>Good Business</span></h2>
+    <span>Good Apps</span> <br/> means <span>Good Business</span></h2>
     <div className="app__profiles">
       {
         abouts.map((about, index) => (
