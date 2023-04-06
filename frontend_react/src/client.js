@@ -19,6 +19,6 @@ export const client = createClient({
   token: 'skAbD8Pik1s2V4o98TvC9um8SOJuQY65QCMmaQryJpUd8Y9eTLbWoUYOtWBwQPLtPlTcBZudtb2gRi2Fz04NCF6pXQULdbWGJmYiiD0QCO718DcNM3oos0a84CpEpyXYUPtUYbsLUhYbUbfkOaj1mRxvshLt9BK38JyLMmtzBlBMRoNML2pt',
 });
 
-const builder = ImageUrlBuilder (client);
+const builder = ImageUrlBuilder(client);
 
 export const urlFor = (source) => builder.image(source);
