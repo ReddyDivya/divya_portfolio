@@ -15,7 +15,7 @@ const Work = () => {
   useEffect(() => {
     const query = '*[_type == "works"]';
 
-    client.fetch(query).then((data) => {
+    client.fetch(query).then((data) => {alert(data)
         setWorks(data);
         setFilterWork(data);
       })
@@ -28,7 +28,7 @@ const Work = () => {
   return (
     <>
       <h2 className="head-text">My Creative
-      <span>Portfolio</span> <br/> means <span>Section</span></h2>
+      <span>Portfolio</span> <br/> <span>Section</span></h2>
       <div className="app__work-filter">
         {['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, index) => (
           <div
@@ -47,7 +47,9 @@ const Work = () => {
         className="app__work-portfolio">
           {filterWork.map((work, index) => (
             <div className="app__work-item app__flex" key={index}>
-
+                <div className="app__work-img app__flex">
+                  <img src={urlFor(work.imgUrl)} alt={work.name}/>
+                </div>
             </div>
           ))}
       </motion.div>
