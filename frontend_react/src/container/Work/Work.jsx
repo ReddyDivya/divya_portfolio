@@ -13,9 +13,9 @@ const Work = () => {
   const [filterWork, setFilterWork] = useState([]);
 
   useEffect(() => {
-    const query = '*[_type == "works"]';
+    const query = `*[_type == "works"]`;
 
-    client.fetch(query).then((data) => {alert(data)
+    client.fetch(query).then((data) => {
         setWorks(data);
         setFilterWork(data);
       })
