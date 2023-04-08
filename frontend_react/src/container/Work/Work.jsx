@@ -120,7 +120,7 @@ const worksData = [
 ]
 
 const Work = () => {
-  const [works, setWorks] = useState([]);
+  const [works, setWorks] = useState(worksData);
   const [filterWork, setFilterWork] = useState([]);
   const [activeFilter, setActiveFilter] = useState('All');
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
@@ -128,12 +128,16 @@ const Work = () => {
   useEffect(() => {
     const query = `*[_type == "works"]`;
 
-    fetch(query).then((data) => {
-      // setWorks(data);
-      // setFilterWork(data);
-      setWorks(worksData);
-      setFilterWork(worksData);
-    }).catch((error) => console.log(error));
+    // fetch(query).then((data) => {
+    //   // setWorks(data);
+    //   // setFilterWork(data);
+    //   setWorks(worksData);
+    //   setFilterWork(worksData);
+    // }).catch((error) => console.log(error));
+    
+    setWorks(worksData);
+    setFilterWork(worksData);
+    
   }, []);
 
   const handleWorkFilter = (item) => {
@@ -145,12 +149,10 @@ const Work = () => {
       setAnimateCard([{ y: 0, opacity: 1 }]);
 
       if (item === 'All') {
-        // setFilterWork(works);
-        setFilterWork(worksData);
+        setFilterWork(works);
       } else {
-        // setFilterWork(works.filter((work) => work.tags.includes(item)));
-       console.log(worksData.filter((work) => work.tags.includes(item))); 
-        setFilterWork(worksData.filter((work) => work.tags.includes(item)));
+        setFilterWork(works.filter((work) => work.tags.includes(item)));
+        console.log(works.filter((work) => work.tags.includes(item)));
       }
     }, 500);
   };
@@ -176,7 +178,7 @@ const Work = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__work-portfolio"
       >
-        {worksData.map((work, index) => (
+        {filterWork.map((work, index) => (
           
           <div className="app__work-item app__flex" key={index}>
             <div
@@ -216,7 +218,6 @@ const Work = () => {
             <div className="app__work-content app__flex">
               <h4 className="bold-text">{work.title}</h4>
               <p className="p-text" style={{ marginTop: 10 }}>{work.description}</p>
-
               <div className="app__work-tag app__flex">
                 <p className="p-text">{work.tags[0]}</p>
               </div>
