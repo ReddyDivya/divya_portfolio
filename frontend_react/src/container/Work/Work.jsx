@@ -6,7 +6,7 @@ import { urlFor, client } from '../../client';
 import './Work.scss';
 import {images} from "../../constants";
 
-const filterWork = [
+const worksData = [
   {
     "_createdAt": "2023-04-06T12:52:37Z",
     "_id": "60e0a60c-45f5-420a-81ef-e1b60696168e",
@@ -121,7 +121,7 @@ const filterWork = [
 
 const Work = () => {
   const [works, setWorks] = useState([]);
-  // const [filterWork, setFilterWork] = useState([]);
+  const [filterWork, setFilterWork] = useState([]);
   const [activeFilter, setActiveFilter] = useState('All');
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
@@ -129,23 +129,29 @@ const Work = () => {
     const query = `*[_type == "works"]`;
 
     fetch(query).then((data) => {
-      setWorks(data);
+      // setWorks(data);
       // setFilterWork(data);
+      setWorks(worksData);
+      setFilterWork(worksData);
     }).catch((error) => console.log(error));
   }, []);
 
   const handleWorkFilter = (item) => {
+  
     setActiveFilter(item);
     setAnimateCard([{ y: 100, opacity: 0 }]);
 
     setTimeout(() => {
       setAnimateCard([{ y: 0, opacity: 1 }]);
 
-      // if (item === 'All') {
-      //   setFilterWork(works);
-      // } else {
-      //   setFilterWork(works.filter((work) => work.tags.includes(item)));
-      // }
+      if (item === 'All') {
+        // setFilterWork(works);
+        setFilterWork(worksData);
+      } else {
+        // setFilterWork(works.filter((work) => work.tags.includes(item)));
+       console.log(worksData.filter((work) => work.tags.includes(item))); 
+        setFilterWork(worksData.filter((work) => work.tags.includes(item)));
+      }
     }, 500);
   };
 
@@ -170,7 +176,8 @@ const Work = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__work-portfolio"
       >
-        {filterWork.map((work, index) => (
+        {worksData.map((work, index) => (
+          
           <div className="app__work-item app__flex" key={index}>
             <div
               className="app__work-img app__flex"
