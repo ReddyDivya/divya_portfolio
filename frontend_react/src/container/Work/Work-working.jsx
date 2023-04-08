@@ -3,7 +3,7 @@ import './Work.scss';
 import {AiFillEye, AiFillGithub} from "react-icons/ai";
 import {motion} from "framer-motion";
 import { AppWrap } from '../../wrapper';
-import { urlFor, client } from '../../client';
+import { urlFor, client } from '../../client.new';
 import {images} from "../../constants";
 
 const filterWork = [

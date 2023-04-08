@@ -6,29 +6,29 @@ import { AppWrap } from '../../wrapper';
 import { urlFor, client } from '../../client';
 import {images} from "../../constants";
 
-const filterWork = [
-  {title:'Modern UI/UX Website', description: 'A modern UI/UX Portfolio Website', imgUrl : images.about01 },
-];
+// const filterWork = [
+//   {title:'Modern UI/UX Website', description: 'A modern UI/UX Portfolio Website', imgUrl : images.about01 },
+// ];
 
 const Work = () => {
 
-  // const [activeFilter, setActiveFilter] = useState('All');
-  // const [animateCard, setAnimateCard] = useState({y:0, opacity: 1});
-  // const [works, setWorks] = useState([]);
-  // const [filterWork, setFilterWork] = useState([]);
+  const [activeFilter, setActiveFilter] = useState('All');
+  const [animateCard, setAnimateCard] = useState({y:0, opacity: 1});
+  const [works, setWorks] = useState([]);
+  const [filterWork, setFilterWork] = useState([]);
 
-  // useEffect(() => {
-  //   const query = `*[_type == "works"]`;
+  useEffect(() => {
+    const query = `*[_type == "works"]`;
 
-  //   client.fetch(query).then((data) => {
-  //       setWorks(data);
-  //       setFilterWork(data);
-  //     })
-  // }, [])
+    client.fetch(query).then((data) => {
+        setWorks(data);
+        setFilterWork(data);
+      })
+  }, [])
 
-  // const handleWorkFilter = (item) => {
+  const handleWorkFilter = (item) => {
 
-  // }//handleWorkFilter 
+  }//handleWorkFilter 
 
   return (
     <>
@@ -38,9 +38,8 @@ const Work = () => {
         {['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, index) => (
           <div
             key={index}
-            // onClick={() => handleWorkFilter(item)}
-            // className={`app__work-filter-item app__flex p-text ${activeFilter === item ? 'item-active' : ''}`}
-          className="app__work-filter-item app__flex p-text item-active"
+            onClick={() => handleWorkFilter(item)}
+            className={`app__work-filter-item app__flex p-text ${activeFilter === item ? 'item-active' : ''}`}
           >
             {item}
           </div>
@@ -48,14 +47,13 @@ const Work = () => {
       </div>
 
       <motion.div
-        // animate={animateCard}
+        animate={animateCard}
         transition={{ duration: 0.5, delayChildren: 0.5, staggerChildren: 0.5 }}
         className="app__work-portfolio">
           {filterWork.map((work, index) => (
             <div className="app__work-item app__flex" key={index}>
                 <div className="app__work-img app__flex">
-                  {/* <img src={urlFor(work.imgUrl)} alt={work.name}/> */}
-                  <img src={work.imgUrl} alt={work.name}/>
+                  <img src={urlFor(work.imgUrl)} alt={work.name}/>
                 </div>
             </div>
           ))}
