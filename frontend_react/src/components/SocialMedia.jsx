@@ -6,7 +6,8 @@ function SocialMedia() {
   return (
     <div className="app__social">
         <div>
-            <BsTwitter/>
+        {/* https://twitter.com/thedivyareddyy */}
+            <BsTwitter href="https://twitter.com/thedivyareddyy"/>
          </div>
          <div>
             <BsInstagram/>

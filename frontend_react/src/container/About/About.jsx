@@ -33,7 +33,6 @@ const abouts = [
     <>
       <h2 className="head-text">I know that 
       <span>Good Apps</span> <br/> means <span>Good Business</span></h2>
-      <h1>Abouts - {abouts.length}</h1>
       <div className="app__profiles">
         {
           abouts.map((about, index) => (
