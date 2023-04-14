@@ -1,24 +1,19 @@
-//working with images using sanity
+// Inside sanity.js
 
-// Import using ESM URL imports in environments that supports it
-import {createClient} from '@sanity/client';
-import imageUrlBuilder from '@sanity/image-url';
+// import { createClient } from "@sanity/client";
+import { createClient } from "next-sanity";
+import imageUrlBuilder from "@sanity/image-url";
 
-export const client = createClient({
-  projectId: "8rkkr4xz",
-  dataset: "production",
-  // apiVersion: "2023-04-07", // use current date (YYYY-MM-DD) to target the latest API version
-  // useCdn: true,
-  // token: process.env.REACT_APP_SANITY_TOKEN,//Only if you want to update content with the client
-});
+export const config = {
+ dataset: "production",
+ projectId: "8rkkr4xz",
+ apiVersion: "2023-04-14"
+};
 
-// export async function fetchText(query) {
-//   let response = await fetch(query);
-//   console.log('documents >>> ', response);
-// }
+// This is to fetch data by making a query to the backend in sanity studio
+export const sanityClient = createClient(config);
 
-// // fetchText();
+// This will parse the source we get back from the query and give us the image url
+export const urlFor = (source) => imageUrlBuilder(config).image(source);
 
-const builder = imageUrlBuilder(createClient);
-
-export const urlFor = (source) => builder.image(source);
+// export const useCurrentUser = createCurrentUserHook(config);
