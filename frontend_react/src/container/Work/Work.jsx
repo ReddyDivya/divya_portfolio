@@ -121,6 +121,7 @@ const worksData = [
 
 const Work = () => {
   const [works, setWorks] = useState(worksData);
+  // const [works, setWorks] = useState([]);
   const [filterWork, setFilterWork] = useState([]);
   const [activeFilter, setActiveFilter] = useState('All');
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
@@ -128,12 +129,12 @@ const Work = () => {
   useEffect(() => {
     const query = `*[_type == "works"]`;
 
-    // fetch(query).then((data) => {
-    //   // setWorks(data);
-    //   // setFilterWork(data);
-    //   setWorks(worksData);
-    //   setFilterWork(worksData);
-    // }).catch((error) => console.log(error));
+    fetch(query).then((data) => {
+      // setWorks(data);
+      // setFilterWork(data);
+      setWorks(worksData);
+      setFilterWork(worksData);
+    }).catch((error) => console.log(error));
     
     setWorks(worksData);
     setFilterWork(worksData);

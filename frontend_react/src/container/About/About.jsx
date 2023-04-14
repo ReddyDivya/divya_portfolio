@@ -2,32 +2,33 @@ import React, {useState, useEffect} from 'react';
 import './About.scss';
 import {motion} from "framer-motion";
 import {images} from "../../constants";
-import { urlFor, client } from '../../client';
+import { urlFor, client, fetchText } from '../../client';
 import {AppWrap, MotionWrap} from "../../wrapper";
 
-const abouts = [
-      {title:'Web Development', description: 'Web development is one of my strong suits', imgUrl : images.about01 },
-      {title:'Frontend Development', description: 'My expertise lies in frontend development', imgUrl : images.about02 },
-      {title:'UI/UX Design', description: 'It is my pleasure to design UI/UX for my clients', imgUrl : images.about04 }
-  ];
+// const abouts = [
+//       {title:'Web Development', description: 'Web development is one of my strong suits', imgUrl : images.about01 },
+//       {title:'Frontend Development', description: 'My expertise lies in frontend development', imgUrl : images.about02 },
+//       {title:'UI/UX Design', description: 'It is my pleasure to design UI/UX for my clients', imgUrl : images.about04 }
+//   ];
+
  const About = () => {
 
-//   const [abouts, setAbouts] = useState([]);
-//   useEffect(() => {
+  const [abouts, setAbouts] = useState([]);
 
-//     client.fetch(`*[_type == "abouts"]{
-//       title,
-//       description,
-//       imgUrl{
-//         asset->{
-//           alt,
-//           url
-//         },
-//         alt
-//       }
-//     }`).then((data) => setAbouts(data)).catch(console.error);
-//   }, []);
+  useEffect(() => {
+    const query = '*[_type == "abouts"]';
 
+    // console.log('data >> ', fetchText(query));
+    // // setAbouts(fetchText(query));
+
+    client.fetch(query).then((data) => {
+      setAbouts(data);
+    });
+
+    client.fetch(query).then((data) => {
+      setAbouts(data);
+    });
+  }, []);
 
   return (
     <>
@@ -41,8 +42,8 @@ const abouts = [
             transition={{ duration: 0.5, type: 'tween' }}
             className="app__profile-item"
             key={about.title + index}>
-              {/* <img src={urlFor(about.imgUrl)} alt={about.title}/> */}
-              <img src={about.imgUrl} alt={about.title}/> 
+              <img src={urlFor(about.imgUrl)} alt={about.title}/>
+              {/* <img src={about.imgUrl} alt={about.title}/>  */}
               <h2 className="bold-text" style={{marginTop:20}}>{about.title}</h2>
               <p className="p-text" style={{marginTop:10}}>{about.description}</p>
             </motion.div> 
