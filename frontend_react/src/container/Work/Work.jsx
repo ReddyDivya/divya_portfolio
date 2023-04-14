@@ -229,6 +229,6 @@ const Work = () => {
   );
 };
 
-export default AppWrap(MotionWrap(Work, "app__work"),
- "work",
+export default AppWrap(MotionWrap(Work, "app__works"),
+ "works",
  "app__primarybg");
