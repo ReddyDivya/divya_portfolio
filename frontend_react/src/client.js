@@ -7,9 +7,9 @@ import imageUrlBuilder from '@sanity/image-url';
 export const client = createClient({
   projectId: "8rkkr4xz",
   dataset: "production",
-  apiVersion: "2023-04-07", // use current date (YYYY-MM-DD) to target the latest API version
-  useCdn: true,
-  token: process.env.REACT_APP_SANITY_TOKEN,//Only if you want to update content with the client
+  // apiVersion: "2023-04-07", // use current date (YYYY-MM-DD) to target the latest API version
+  // useCdn: true,
+  // token: process.env.REACT_APP_SANITY_TOKEN,//Only if you want to update content with the client
 });
 
 // export async function fetchText(query) {
@@ -19,6 +19,6 @@ export const client = createClient({
 
 // // fetchText();
 
-const builder = imageUrlBuilder(client);
+const builder = imageUrlBuilder(createClient);
 
 export const urlFor = (source) => builder.image(source);
