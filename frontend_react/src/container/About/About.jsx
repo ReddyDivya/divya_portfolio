@@ -3,7 +3,7 @@ import './About.scss';
 import {motion} from "framer-motion";
 import {images} from "../../constants";
 import { urlFor, client } from '../../client';
-import {AppWrap} from "../../wrapper";
+import {AppWrap, MotionWrap} from "../../wrapper";
 
 const abouts = [
       {title:'Web Development', description: 'Web development is one of my strong suits', imgUrl : images.about01 },
@@ -53,4 +53,6 @@ const abouts = [
   )
 }
 
-export default AppWrap(About, "about");
+export default AppWrap(MotionWrap(About, 'app__about'), 
+"about", 
+"app__whitebg");
