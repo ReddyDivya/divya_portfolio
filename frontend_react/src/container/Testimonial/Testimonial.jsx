@@ -31,9 +31,11 @@ const Testimonial = () => {
 
   return (
     <>
+    <h2 className="head-text">Testimonials</h2>
       {testimonials.length && (
         <>
-          <h2 className="head-text">People I've worked with have said some nice things...</h2>
+          <p className="p-text">People I've worked with have said some nice things...</p>
+          <br/>
           <div className="app__testimonial-item app__flex">
             <img src={urlFor(testimonials[currentIndex].imgurl)} alt={testimonials[currentIndex].name} />
             <div className="app__testimonial-content">
