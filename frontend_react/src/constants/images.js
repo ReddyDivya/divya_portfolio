@@ -14,6 +14,7 @@ import node from '../assets/node.png';
 import python from '../assets/python.png';
 import react from '../assets/react.png';
 import redux from '../assets/redux.png';
+import tailwindcss from '../assets/tailwindcss.png';
 import sass from '../assets/sass.png';
 import typescript from '../assets/typescript.png';
 import vue from '../assets/vue.png';
@@ -54,6 +55,7 @@ export default {
   react,
   redux,
   sass,
+  tailwindcss,
   typescript,
   vue,
   about01,
