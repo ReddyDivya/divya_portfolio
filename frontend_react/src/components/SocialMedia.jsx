@@ -1,20 +1,30 @@
 import React from 'react';
-import {BsTwitter, BsInstagram} from "react-icons/bs";
-import {FaFacebookF} from "react-icons/fa";
+import {BsTwitter, BsLinkedin} from "react-icons/bs";
+import {AiFillGithub, AiOutlineCodepen, AiOutlineCodeSandbox} from "react-icons/ai";
+import {SiHashnode} from "react-icons/si";
+
 
 function SocialMedia() {
   return (
     <div className="app__social">
-        <div>
-        {/* https://twitter.com/thedivyareddyy */}
-            <BsTwitter href="https://twitter.com/thedivyareddyy"/>
+         <div>
+            <BsLinkedin/>
          </div>
          <div>
-            <BsInstagram/>
-         </div> 
+            <SiHashnode/>
+         </div>
          <div>
-            <FaFacebookF/>
-         </div>  
+            <AiFillGithub/>
+         </div>
+         <div>
+            <AiOutlineCodepen/>
+         </div>
+         <div>
+            <AiOutlineCodeSandbox/>
+         </div>
+         <div>
+            <BsTwitter/>
+         </div>
     </div>
   )
 }
