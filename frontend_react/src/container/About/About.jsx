@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './About.scss';
 import {motion} from "framer-motion";
-import {images} from "../../constants";
 import { urlFor, client } from '../../client.js';
 import {AppWrap, MotionWrap} from "../../wrapper";
 
@@ -16,8 +15,7 @@ import {AppWrap, MotionWrap} from "../../wrapper";
 
   return (
     <>
-      <h2 className="head-text">I know that 
-      <span>Good Apps</span> <br/> means <span>Good Business</span></h2>
+      <h2 className="head-text">A <span>designer</span> & <span>coder</span> who creates things that are <span>beautifully simple</span></h2>
       <div className="app__profiles">
         {
           abouts.map((about, index) => (
