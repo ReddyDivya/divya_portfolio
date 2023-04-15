@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Tooltip as ReactTooltip } from 'react-tooltip'
 import { AppWrap, MotionWrap } from '../../wrapper';
-import { urlFor, sanityClient } from '../../client';
+import { urlFor, client } from '../../client.js';
 import './Skills.scss';
 
 const skillsData = [

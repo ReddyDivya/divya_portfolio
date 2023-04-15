@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { images } from '../../constants';
 import { AppWrap, MotionWrap } from '../../wrapper';
-import { sanityClient } from '../../client';
+import { client } from '../../client.js';
 import './Footer.scss';
 
 const Footer = () => {
@@ -27,7 +27,7 @@ const Footer = () => {
       message: formData.message,
     };
 
-    sanityClient.create(contact)
+    client.create(contact)
       .then(() => {
         setLoading(false);
         setIsFormSubmitted(true);
