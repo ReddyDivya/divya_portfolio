@@ -10,16 +10,8 @@ import {AppWrap, MotionWrap} from "../../wrapper";
 
   useEffect(() => {
 
-    client.fetch(`*[_type == 'abouts']{
-      _id,
-      description,
-      imgUrl {
-          asset->{
-            _id,
-          }
-        },
-      title
-    }`).then((data) => setAbouts(data)).catch(console.error);    
+    const query =`*[_type == 'abouts']`; 
+    client.fetch(query).then((data) => setAbouts(data)).catch(console.error);    
   }, []);
 
   return (
