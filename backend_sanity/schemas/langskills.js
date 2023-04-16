@@ -1,6 +1,6 @@
 export default{
-    name:'skills',
-    title:'Skills',
+    name:'langskills',
+    title:'Programming Languages',
     type: 'document',
     fields:[
         {
@@ -21,18 +21,6 @@ export default{
               hotspot: true,
             },
         },
-        {
-            name: 'tags',
-            title: 'Tags',
-           type:'array',
-           of: [
-             {
-               name:'tag',
-               title:'Tag',
-               type:'string'
-             }
-           ]
-          },
         
     ]
 }
