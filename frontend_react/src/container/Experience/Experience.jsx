@@ -18,24 +18,24 @@ const Experience = () => {
 
   return (
     <>
-      <h2 className="head-text">Work Experiences</h2>
+      <h2 className="head-text">Work Experience</h2>
         
-        <div className="app__skills-exp">
+        <div className="app__experience">
           {experiences.map((experience, index) => (
             <motion.div
-              className="app__skills-exp-item"
+              className="app__experience-item"
               key={experience.year+index}
             >
-              <div className="app__skills-exp-year">
+              <div className="app__experience-year">
                 <p className="bold-text">{experience.year}</p>
               </div>
-              <motion.div className="app__skills-exp-works">
+              <motion.div className="app__experience-works">
                 {experience.works.map((work, index) => (
                   <>
                     <motion.div
                       whileInView={{ opacity: [0, 1] }}
                       transition={{ duration: 0.5 }}
-                      className="app__skills-exp-work"
+                      className="app__experience-work"
                       data-tip
                       data-for={work.name}
                       key={work.name+index}
@@ -48,7 +48,7 @@ const Experience = () => {
                       id={work.name}
                       effect="solid"
                       arrowColor="#fff"
-                      className="skills-tooltip"
+                      className="experience-tooltip"
                     >
                       {work.desc}
                     </ReactTooltip>
@@ -63,7 +63,7 @@ const Experience = () => {
 };
 
 export default AppWrap(
-  MotionWrap(Experience, 'app__skills'),
+  MotionWrap(Experience, 'app__experiences'),
   'experience',
   'app__whitebg',
 );
