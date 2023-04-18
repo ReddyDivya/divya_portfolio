@@ -88,7 +88,7 @@ const Blogs = () => {
                 transition={{ duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5 }}
                 className="app__work-hover app__flex"
               >
-                <a href={`https://blog.reddydivya.dev/${post.slug}`} target="_blank" rel="noreferrer">
+                <a href={`https://thedivyareddyy.hashnode.dev/${post.slug}`} target="_blank" rel="noreferrer">
                   <motion.div
                     whileInView={{ scale: [0, 1] }}
                     whileHover={{ scale: [1, 0.90] }}
@@ -115,4 +115,4 @@ const Blogs = () => {
 
 export default AppWrap(MotionWrap(Blogs, 'app__blogs'), 
 "blogs", 
-"app__primarybg");
+"app__whitebg");

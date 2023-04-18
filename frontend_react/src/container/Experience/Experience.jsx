@@ -65,5 +65,5 @@ const Experience = () => {
 export default AppWrap(
   MotionWrap(Experience, 'app__experiences'),
   'experience',
-  'app__whitebg',
+  'app__primarybg',
 );
