@@ -67,7 +67,10 @@ const Testimonial = () => {
             transition={{ duration: 0.5, type: 'tween' }}
             key={brand._id}
           >
-            
+            {/*
+            When called, the urlFor function utilizes the builder instance to generate the URL for the specified image source. 
+            The generated URL can be used to display or manipulate the image in your React application.
+            */}
             <img src={urlFor(brand.imgUrl)} alt={brand.name} />
           </motion.div>
         ))}
