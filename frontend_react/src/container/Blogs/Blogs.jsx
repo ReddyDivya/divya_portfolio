@@ -8,7 +8,7 @@ const Blogs = () => {
     const [posts, setPosts] = useState([]);
 
     const fetchPosts = async (query) => {
-      const data = await fetch('https://api.hashnode.com', {
+      const data = await fetch('https://gql.hashnode.com/', {
         method: 'POST',
         headers: {
           'Content-type': 'application/json',
@@ -17,21 +17,29 @@ const Blogs = () => {
       })
 
       const response = await data.json();
-      setPosts(response.data.user.publication.posts);
+      // console.log(response.data.publication.posts);
+      setPosts(response.data.publication.posts.edges);
     };
 
     useEffect(()=>{
       
       //to fetch blogs from hashnode api [https://api.hashnode.com]
       const query = `
-      {
-        user(username: "ReddyDivya") {
-          publication {
-            posts{
-              slug
-              title
-              brief
-              coverImage
+      query Publication {
+        publication(host: "thedivyareddyy.hashnode.dev") {
+          isTeam
+          title
+          posts(first: 20) {
+            edges {
+              node {
+                title
+                brief
+                slug
+                url
+                coverImage {
+                  url
+                }
+              }
             }
           }
         }
@@ -45,7 +53,6 @@ const Blogs = () => {
   return (
     <>
         <h2 className="head-text">Blogs</h2>
-        
         <motion.div
           transition={{ duration: 0.5, delayChildren: 0.5 }}
           className="app__blog-portfolio"
@@ -55,14 +62,13 @@ const Blogs = () => {
             <div
               className="app__blog-img app__flex"
             >
-              <img src={post.coverImage} alt={post.title} />
-
+              <img src={post.node.coverImage.url} alt={post.node.title} />
               <motion.div
                 whileHover={{ opacity: [0, 1] }}
                 transition={{ duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5 }}
                 className="app__blog-hover app__flex"
               >
-                <a href={`https://thedivyareddyy.hashnode.dev/${post.slug}`} target="_blank" rel="noreferrer">
+                <a href={`https://thedivyareddyy.hashnode.dev/${post.node.slug}`} target="_blank" rel="noreferrer">
                   <motion.div
                     whileInView={{ scale: [0, 1] }}
                     whileHover={{ scale: [1, 0.90] }}
@@ -76,8 +82,8 @@ const Blogs = () => {
             </div>
 
             <div className="app__blog-content app__flex">
-              <h4 className="bold-text">{post.title}</h4>
-              <p className="p-text" style={{ marginTop: 10 }}>{post.brief}</p>
+              <h4 className="bold-text">{post.node.title}</h4>
+              <p className="p-text" style={{ marginTop: 10 }}>{post.node.brief}</p>
             </div>
           </div>
         ))}
