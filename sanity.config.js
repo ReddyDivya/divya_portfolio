@@ -7,8 +7,8 @@ export default defineConfig({
   name: 'default',
   title: 'divya_portfolio',
 
-  projectId: '8rkkr4xz',
-  dataset: 'portfolio',
+  projectId: '',
+  dataset: '',
 
   plugins: [deskTool(), visionTool()],
 
