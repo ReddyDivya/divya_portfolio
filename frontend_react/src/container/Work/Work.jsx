@@ -41,7 +41,7 @@ const Work = () => {
       <h2 className="head-text">Projects</h2>
 
       <div className="app__work-filter">
-        {['All', 'HTML/CSS', 'JavaScript', 'React JS', 'Redux', 'Next JS', 'Tailwind CSS', 'MongoDB', 'Express JS', 'Java'].map((item, index) => (
+        {['All', 'React JS', 'Redux', 'Tailwind CSS', 'Java'].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}
@@ -95,10 +95,12 @@ const Work = () => {
 
             <div className="app__work-content app__flex">
               <h4 className="bold-text">{work.title}</h4>
-              <p className="p-text" style={{ marginTop: 10 }}>{work.description}</p>
-
+              <p className="p-text" style={{ marginTop: 10 }}>{work.description}
+                <h4 className="bold-text">Tech Stack:</h4>
+                <img width="140" src={work.tags[0]} alt="Tech stack"/>
+              </p>
               <div className="app__work-tag app__flex">
-                <p className="p-text">{work.tags[0]}</p>
+                  <p className="p-text" key={work.tags[1]}>{work.tags[1]}</p>
               </div>
             </div>
           </div>
@@ -110,6 +112,6 @@ const Work = () => {
 
 export default AppWrap(
   MotionWrap(Work, 'app__works'),
-  'work',
+  'projects',
   'app__primarybg',
 );

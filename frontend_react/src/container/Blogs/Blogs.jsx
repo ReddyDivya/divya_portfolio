@@ -83,7 +83,7 @@ const Blogs = () => {
 
             <div className="app__blog-content app__flex">
               <h4 className="bold-text">{post.node.title}</h4>
-              <p className="p-text" style={{ marginTop: 10 }}>{post.node.brief}</p>
+              {/* <p className="p-text" style={{ marginTop: 10 }}>{post.node.brief}</p> */}
             </div>
           </div>
         ))}

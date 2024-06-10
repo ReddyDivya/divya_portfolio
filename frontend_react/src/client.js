@@ -12,9 +12,9 @@ export const client = createClient({
   
   //options
   //process.env => environment variables
-  projectId: "",
-  dataset: '',
-  apiVersion: '',
+  projectId: "8rkkr4xz",
+  dataset: 'portfolio',
+  apiVersion: 'v2021-03-05',
   useCdn: true,
   //token is important for creating a field in sanity[see contact]
   token:''

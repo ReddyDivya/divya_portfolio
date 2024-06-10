@@ -14,7 +14,7 @@ import {AppWrap, MotionWrap} from "../../wrapper";
 
   return (
     <>
-      <h2 className="head-text">A <span>designer</span> & <span>coder</span> who creates things that are <span>beautifully simple</span></h2>
+      <h2 className="head-text">I'm a <span>React JS Developer</span> who creates things that are <span>beautifully simple</span></h2>
       <div className="app__profiles">
         {
           abouts.map((about, index) => (

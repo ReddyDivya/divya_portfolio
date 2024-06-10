@@ -14,13 +14,14 @@ export default{
             type:'string'
         },
         {
+            name:'icon1',
+            title:'Icon1',
+            type: 'image',
+        },
+        {
             name:'icon',
             title:'Icon',
-            type: 'image',
-            options: {
-              hotspot: true,
-            },
+            type: 'string',
         },
-        
     ]
 }

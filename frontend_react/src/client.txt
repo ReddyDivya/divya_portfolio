@@ -1,0 +1,4 @@
+projectId: "8rkkr4xz",
+dataset: 'portfolio',
+apiVersion: 'v2021-03-05',
+useCdn: true,

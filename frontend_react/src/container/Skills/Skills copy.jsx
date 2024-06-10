@@ -20,12 +20,14 @@ const Skills = () => {
     <>
       <h2 className="head-text">Technical Skills</h2>
       <div className="app__skills-container">
+        <div
+          className="app__flex"
+          // style={{ backgroundColor: "#F0EEEE" }}
+        >
+          {/* <img src={urlFor(skill.icon)} alt={skill.name} /> */}
+          <img src="https://skillicons.dev/icons?i=html,css,js,react,redux,tailwind,bootstrap,git,github,materialui,graphql,netlify,nodejs,postman,styledcomponents,express,firebase,visualstudio,vite" alt="skills"/>
+        </div>
         
-        <motion.div className="app__skills-list">
-          <div className="app__flex">
-            <img src="https://skillicons.dev/icons?i=html,css,js,react,redux,tailwind,bootstrap,git,github,materialui,graphql,netlify,nodejs,postman,styledcomponents,express,firebase,visualstudio,vite" alt="skills"/>
-          </div>
-        </motion.div>
       </div>
     </>
   );

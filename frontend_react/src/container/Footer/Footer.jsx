@@ -45,7 +45,7 @@ const Footer = () => {
           <a href="mailto:divyareddy0205@gmail.com" className="p-text">divyareddy0205@gmail.com</a>
         </div>
       </div>
-      {/* {!isFormSubmitted ? (
+      {!isFormSubmitted ? (
         <div className="app__footer-form app__flex">
           <div className="app__flex">
             <input className="p-text" type="text" placeholder="Your Name" name="username" value={username} onChange={handleChangeInput} />
@@ -70,7 +70,17 @@ const Footer = () => {
             Thank you for getting in touch!
           </h3>
         </div>
-      )} */}
+      )}
+
+      {/* Copyright */}
+      <div className="copyright">
+        <p className="p-text">Developed with Passion</p>
+        <p className="p-text">
+          <a href="https://www.linkedin.com/in/reddy-divya-58025a12b/" target='_blank' rel="noreferrer">
+            Reddy Divya
+          </a>
+        </p>
+    </div>
     </>
   );
 };
