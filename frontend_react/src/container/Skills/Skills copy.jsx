@@ -27,7 +27,6 @@ const Skills = () => {
           {/* <img src={urlFor(skill.icon)} alt={skill.name} /> */}
           <img src="https://skillicons.dev/icons?i=html,css,js,react,redux,tailwind,bootstrap,git,github,materialui,graphql,netlify,nodejs,postman,styledcomponents,express,firebase,visualstudio,vite" alt="skills"/>
         </div>
-        
       </div>
     </>
   );

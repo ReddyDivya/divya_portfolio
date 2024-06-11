@@ -39,7 +39,6 @@ const Work = () => {
   return (
     <>
       <h2 className="head-text">Projects</h2>
-
       <div className="app__work-filter">
         {['All', 'React JS', 'Redux', 'Tailwind CSS', 'Java'].map((item, index) => (
           <div

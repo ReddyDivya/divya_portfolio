@@ -19,7 +19,6 @@ const Experience = () => {
   return (
     <>
       <h2 className="head-text">Work Experience</h2>
-        
         <div className="app__experience">
           {experiences.map((experience, index) => (
             <motion.div
