@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { MdLightMode, MdDarkMode } from "react-icons/md";
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 import './Navbar.scss';
@@ -17,6 +18,12 @@ const Navbar = () => {
             <a href={`#${item}`}>{item}</a>
           </li>
         ))}
+        <li className="app__flex p-text">
+          <MdLightMode/>
+        </li>
+        <li className="app__flex p-text">
+          <MdDarkMode/>
+        </li>
       </ul>
 
       <div className="app__navbar-menu">

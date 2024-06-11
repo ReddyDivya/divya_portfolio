@@ -75,11 +75,9 @@ const Footer = () => {
       {/* Copyright */}
       <div className="copyright">
         <p className="p-text">Developed with Passion</p>
-        <p className="p-text">
           <a href="https://www.linkedin.com/in/reddy-divya-58025a12b/" target='_blank' rel="noreferrer">
-            Reddy Divya
+            <b>Reddy Divya</b>
           </a>
-        </p>
     </div>
     </>
   );
