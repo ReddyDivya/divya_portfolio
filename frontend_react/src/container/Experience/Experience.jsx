@@ -43,14 +43,7 @@ const Experience = () => {
                       <p className="p-text">{work.company}</p>
                       <p className="p-text">{work.desc}</p>
                     </motion.div>
-                    <ReactTooltip
-                      id={work.name}
-                      effect="solid"
-                      arrowColor="#fff"
-                      className="experience-tooltip"
-                    >
-                      {work.desc}
-                    </ReactTooltip>
+
                   </>
                 ))}
               </motion.div>

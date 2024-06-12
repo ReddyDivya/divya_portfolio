@@ -37,7 +37,7 @@ const Footer = () => {
 
   return (
     <>
-      {/* <h2 className="head-text">Take a coffee & chat with me</h2> */}
+      <h2 className="head-text">Contact</h2>
 
       <div className="app__footer-cards">
         <div className="app__footer-card ">
@@ -75,7 +75,7 @@ const Footer = () => {
       {/* Copyright */}
       <div className="copyright">
         <p className="p-text">Developed with Passion</p>
-          <a href="https://www.linkedin.com/in/reddy-divya-58025a12b/" target='_blank' rel="noreferrer">
+          <a className="p-text" href="https://www.linkedin.com/in/reddy-divya-58025a12b/" target='_blank' rel="noreferrer">
             <b>Reddy Divya</b>
           </a>
     </div>
