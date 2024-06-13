@@ -4,23 +4,21 @@
   flex-direction: column;
 }
   
-//Light theme
+// Light theme styles
 .app__work-filter__light {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-
-  margin: 4rem 0 2rem;
+  margin: 4rem 0 2rem; // Margin for the filter section
 
   .app__work-filter-item {
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
-    background-color: #fff;
+    background-color: var(--lightGray-color);
     color: #000;
     font-weight: 800;
-
     cursor: pointer;
     transition: all 0.3s ease;
     margin: 0.5rem;
@@ -31,7 +29,7 @@
     }
 
     @media screen and (min-width: 2000px) {
-      padding: 1rem 2rem;
+      padding: 1rem 2rem; // Padding for very large screens (like 4K)
       border-radius: 0.85rem;
     }
   }
@@ -42,15 +40,14 @@
   }
 }
 
-//Dark theme
+// Dark theme styles
 .app__work-filter__dark {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-
-  margin: 4rem 0 2rem;
+  margin: 4rem 0 2rem; // Margin for the filter section
 
   .app__work-filter-item {
     padding: 0.5rem 1rem;
@@ -58,18 +55,17 @@
     background-color: var(--lightGray-color);
     color: var(--darkSlateBlue-color);
     font-weight: 800;
-
     cursor: pointer;
     transition: all 0.3s ease;
     margin: 0.5rem;
 
     &:hover {
       background-color: var(--blueGray-color);
-      color: #fff;
+      color: var(--prussianBlue-color);
     }
 
     @media screen and (min-width: 2000px) {
-      padding: 1rem 2rem;
+      padding: 1rem 2rem; // Padding for very large screens (like 4K)
       border-radius: 0.85rem;
     }
   }
@@ -80,7 +76,7 @@
   }
 }
 
-//Light theme
+// Light theme styles for portfolio items
 .app__work-portfolio__light {
   display: flex;
   flex-wrap: wrap;
@@ -88,15 +84,13 @@
   align-items: center;
 
   .app__work-item {
-    width: 270px;
+    width: 270px; // Default width for PC view
     flex-direction: column;
-
-    margin: 2rem;
+    margin: 2rem; // Default margin for PC view
     padding: 1rem;
     border-radius: 0.5rem;
-    background-color: #fff;
+    background-color: var(--lightGray-color);
     color: #000;
-
     cursor: pointer;
     transition: all 0.3s ease;
 
@@ -105,37 +99,40 @@
     }
 
     @media screen and (min-width: 2000px) {
-      width: 470px;
+      width: 470px; // Width for very large screens (like 4K)
       padding: 1.25rem;
       border-radius: 0.75rem;
     }
 
-    @media screen and (max-width: 300px) {
-      width: 100%;
-      margin: 1rem;
+    @media screen and (max-width: 768px) {
+      width: 200px; // Width for tablet view
+      height: 300px; // Height for tablet view
+      margin: 1rem; // Margin for tablet view
+    }
+
+    @media screen and (max-width: 480px) {
+      width: 100%; // Width for mobile view
+      height: auto; // Adjust height for mobile view
+      margin: 1rem; // Margin for mobile view
     }
   }
 }
 
-//Dark theme
-//Displaying Projects section
+// Dark theme styles for portfolio items
 .app__work-portfolio__dark {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 
-  //Project
   .app__work-item {
-    width: 270px;
+    width: 270px; // Default width for PC view
     flex-direction: column;
-
-    margin: 2rem;
+    margin: 2rem; // Default margin for PC view
     padding: 1rem;
     border-radius: 0.5rem;
     background-color: var(--darkSlateBlue-color);
     color: #000;
-
     cursor: pointer;
     transition: all 0.3s ease;
 
@@ -144,22 +141,28 @@
     }
 
     @media screen and (min-width: 2000px) {
-      width: 470px;
+      width: 470px; // Width for very large screens (like 4K)
       padding: 1.25rem;
       border-radius: 0.75rem;
     }
 
-    @media screen and (max-width: 300px) {
-      width: 100%;
-      margin: 1rem;
+    @media screen and (max-width: 768px) {
+      width: 200px; // Width for tablet view
+      height: 300px; // Height for tablet view
+      margin: 1rem; // Margin for tablet view
+    }
+
+    @media screen and (max-width: 480px) {
+      width: 100%; // Width for mobile view
+      height: auto; // Adjust height for mobile view
+      margin: 1rem; // Margin for mobile view
     }
   }
 }
 
 .app__work-img {
   width: 100%;
-  height: 230px;
-
+  height: 230px; // Default height for PC view
   position: relative;
 
   img {
@@ -170,11 +173,19 @@
   }
 
   @media screen and (min-width: 2000px) {
-    height: 350px;
+    height: 350px; // Height for very large screens (like 4K)
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 200px; // Height for tablet view
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 140px; // Height for mobile view
   }
 }
 
-//Project Hover
+// Styles for the hover effect on project images
 .app__work-hover {
   position: absolute;
   top: 0;
@@ -184,7 +195,6 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-
   border-radius: 0.5rem;
   opacity: 0;
   transition: all 0.3s ease;
@@ -195,7 +205,6 @@
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
-
     margin: 1rem;
     font-family: var(--font-base);
     font-weight: 800;
@@ -221,17 +230,17 @@
     line-height: 1.5;
 
     @media screen and (min-width: 2000px) {
-      margin-top: 3rem;
+      margin-top: 3rem; // Margin top for very large screens (like 4K)
     }
   }
 
-  //Project Tech used liked React, Java tags
+  // Styles for the tags indicating technologies used in projects (e.g., React, Java)
   .app__work-tag {
     position: absolute;
-
     padding: 0.5rem 1rem;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: var(--primary-color);
+    color: var(--prussianBlue-color);
     top: -25px;
   }
 }

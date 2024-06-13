@@ -44,7 +44,7 @@ const Footer = () => {
       <div className={`app__footer-cards__${theme}`}>
         <div className="app__footer-card">
           <img src={images.email} alt="email" />
-          <a href="mailto:divyareddy0205@gmail.com" className={`p-text__${theme}`}>divyareddy0205@gmail.com</a>
+          <a href="mailto:divyareddy0205@gmail.com" className={`app__footer-text`}>divyareddy0205@gmail.com</a>
         </div>
       </div>
       {/* {!isFormSubmitted ? (

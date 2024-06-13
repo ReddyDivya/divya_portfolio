@@ -31,7 +31,7 @@ const Blogs = () => {
         publication(host: "thedivyareddyy.hashnode.dev") {
           isTeam
           title
-          posts(first: 20) {
+          posts(first: 10) {
             edges {
               node {
                 title
@@ -97,4 +97,4 @@ const Blogs = () => {
 
 export default AppWrap(MotionWrap(Blogs, 'app__blogs'), 
 "blogs", 
-"app__whitebg");
+"app__primarybg");

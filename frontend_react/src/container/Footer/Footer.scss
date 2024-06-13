@@ -4,246 +4,249 @@
   flex-direction: column;
 
   @media screen and (max-width: 768px) {
-    flex-direction: column;
+    flex-direction: column; // Mobile and tablet: Ensure column layout
   }
 }
 
-//Light theme
+// Light theme styles for footer cards
 .app__footer-cards__light {
-  width: 60%;
+  width: 60%; // Large view: 60% width
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  margin: 4em 2rem 2rem;
+  margin: 4em 2rem 2rem; // Margin around the card container
 
   .app__footer-card {
-    min-width: 290px;
+    min-width: 290px; // Minimum width for each card
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-
-    margin: 1rem 0;
-    padding: 1rem;
+    margin: 1rem 0; // Margin around each card
+    padding: 1rem; // Padding inside each card
     border-radius: 10px;
     cursor: pointer;
     background-color: var(--lightGray-color);
-
     transition: all 0.3s ease-in-out;
 
     img {
       width: 40px;
       height: 40px;
-      margin: 0 0.7rem;
+      margin: 0 0.7rem; // Margin around the image
     }
 
-    p {
-      font-weight: 500;
+    p, a {
+      font-weight: 500; // Font weight for paragraph and anchor text
     }
+
     a {
-      text-decoration: none;
-      font-weight: 500;
+      text-decoration: none; // Remove underline from links
     }
+
     &:hover {
-      box-shadow: 0 0 25px #fef4f5;
+      box-shadow: 0 0 25px #fef4f5; // Shadow on hover
     }
 
     @media screen and (max-width: 450px) {
-      width: 100%;
+      width: 100%; // Mobile: Full width
     }
   }
 
   @media screen and (max-width: 768px) {
-    width: 100%;
+    width: 100%; // Mobile and tablet: Full width
   }
 }
 
-//Dark theme
+// Dark theme styles for footer cards
 .app__footer-cards__dark {
-  width: 60%;
+  width: 60%; // Large view: 60% width
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  margin: 4em 2rem 2rem;
+  margin: 4em 2rem 2rem; // Margin around the card container
 
   .app__footer-card {
-    min-width: 290px;
+    min-width: 290px; // Minimum width for each card
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-
-    margin: 1rem 0;
-    padding: 1rem;
+    margin: 1rem 0; // Margin around each card
+    padding: 1rem; // Padding inside each card
     border-radius: 10px;
     cursor: pointer;
     background-color: var(--primary-color);
-
     transition: all 0.3s ease-in-out;
 
     img {
       width: 40px;
       height: 40px;
-      margin: 0 0.7rem;
+      margin: 0 0.7rem; // Margin around the image
     }
 
-    p {
-      font-weight: 500;
+    p, a {
+      font-weight: 500; // Font weight for paragraph and anchor text
     }
+
     a {
-      text-decoration: none;
-      font-weight: 500;
+      text-decoration: none; // Remove underline from links
     }
+
     &:hover {
-      box-shadow: 0 0 25px #fef4f5;
+      box-shadow: 0 0 25px #fef4f5; // Shadow on hover
     }
 
     @media screen and (max-width: 450px) {
-      width: 100%;
+      width: 100%; // Mobile: Full width
     }
   }
 
   @media screen and (max-width: 768px) {
-    width: 100%;
+    width: 100%; // Mobile and tablet: Full width
   }
 }
 
 .app__footer-cards .app__footer-card:last-child {
-  background-color: #f2f7fb;
+  background-color: #f2f7fb; // Special background for the last card
 }
 
 .app__footer-cards .app__footer-card:last-child:hover {
-  box-shadow: 0 0 25px #f2f7fb;
+  box-shadow: 0 0 25px #f2f7fb; // Hover shadow for the last card
 }
 
-//Light theme
+// Light theme styles for footer form
 .app__footer-form__light {
-  width: 60%;
+  width: 60%; // Large view: 60% width
   flex-direction: column;
-  margin: 1rem 2rem;
+  margin: 1rem 2rem; // Margin around the form container
 
   div {
-    width: 100%;
-
-    margin: 0.75rem 0;
+    width: 100%; // Full width for form elements
+    margin: 0.75rem 0; // Margin around form elements
     border-radius: 10px;
     cursor: pointer;
     background-color: var(--primary-color);
-
     transition: all 0.3s ease-in-out;
+    text-align: center; // Center text in mobile view
 
-    input,
-    textarea {
-      width: 100%;
-      padding: 0.95rem;
+    input, textarea {
+      width: 100%; // Full width for inputs and textareas
+      padding: 0.95rem; // Padding inside form elements
       border: none;
       border-radius: 7px;
-      // background-color: var(--primary-color);
       background-color: var(--white-color);
-
       font-family: var(--font-base);
       color: var(--secondary-color);
       outline: none;
     }
 
     textarea {
-      height: 170px;
+      height: 170px; // Fixed height for textarea
     }
 
     &:hover {
-      box-shadow: 0 0 25px var(--primary-color);
+      box-shadow: 0 0 25px var(--primary-color); // Shadow on hover
     }
   }
 
   button {
-    padding: 1rem 2rem;
+    padding: 1rem 2rem; // Padding inside button
     border-radius: 10px;
     border: none;
     background-color: var(--secondary-color);
-
     font-weight: 500;
     color: var(--white-color);
     outline: none;
-    margin: 2rem 0 0 0;
+    margin: 2rem 0 0 0; // Margin around button
     font-family: var(--font-base);
-
     transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
     cursor: pointer;
 
     &:hover {
-      background-color: #2430af;
+      background-color: #2430af; // Background color on hover
     }
   }
 
   @media screen and (max-width: 768px) {
-    width: 100%;
-    margin: 1rem 0;
+    width: 100%; // Mobile and tablet: Full width
+    margin: 1rem 0; // Margin adjustment for small screens
+  }
+
+  @media screen and (max-width: 450px) {
+    div {
+      text-align: center; // Center text in very small screens
+    }
   }
 }
 
-//Dark theme
+// Dark theme styles for footer form
 .app__footer-form__dark {
-  width: 60%;
+  width: 60%; // Large view: 60% width
   flex-direction: column;
-  margin: 1rem 2rem;
+  margin: 1rem 2rem; // Margin around the form container
 
   div {
-    width: 100%;
-
-    margin: 0.75rem 0;
+    width: 100%; // Full width for form elements
+    margin: 0.75rem 0; // Margin around form elements
     border-radius: 10px;
     cursor: pointer;
     background-color: var(--primary-color);
-
     transition: all 0.3s ease-in-out;
+    text-align: center; // Center text in mobile view
 
-    input,
-    textarea {
-      width: 100%;
-      padding: 0.95rem;
+    input, textarea {
+      width: 100%; // Full width for inputs and textareas
+      padding: 0.95rem; // Padding inside form elements
       border: none;
       border-radius: 7px;
-      // background-color: var(--primary-color);
       background-color: var(--white-color);
-
       font-family: var(--font-base);
       color: var(--secondary-color);
       outline: none;
     }
 
     textarea {
-      height: 170px;
+      height: 170px; // Fixed height for textarea
     }
 
     &:hover {
-      box-shadow: 0 0 25px var(--primary-color);
+      box-shadow: 0 0 25px var(--primary-color); // Shadow on hover
     }
   }
 
   button {
-    padding: 1rem 2rem;
+    padding: 1rem 2rem; // Padding inside button
     border-radius: 10px;
     border: none;
     background-color: var(--darkSlateBlue-color);
-
     font-weight: 500;
     color: var(--lightGray-color);
     outline: none;
-    margin: 2rem 0 0 0;
+    margin: 2rem 0 0 0; // Margin around button
     font-family: var(--font-base);
-
     transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
     cursor: pointer;
 
     &:hover {
-      background-color: var(--blueGray-color);  
+      background-color: var(--blueGray-color); // Background color on hover
     }
   }
 
   @media screen and (max-width: 768px) {
-    width: 100%;
-    margin: 1rem 0;
+    width: 100%; // Mobile and tablet: Full width
+    margin: 1rem 0; // Margin adjustment for small screens
   }
+
+  @media screen and (max-width: 450px) {
+    div {
+      text-align: center; // Center text in very small screens
+    }
+  }
+}
+
+// Text color for the footer
+.app__footer-text {
+  color: var(--prussianBlue-color); // Text color
 }
