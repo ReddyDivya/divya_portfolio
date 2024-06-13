@@ -43,7 +43,7 @@
 }
 
 //Dark theme
-.app__work-filter {
+.app__work-filter__dark {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -81,7 +81,7 @@
 }
 
 //Light theme
-.app__work-portfolio {
+.app__work-portfolio__light {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -119,7 +119,7 @@
 
 //Dark theme
 //Displaying Projects section
-.app__work-portfolio {
+.app__work-portfolio__dark {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

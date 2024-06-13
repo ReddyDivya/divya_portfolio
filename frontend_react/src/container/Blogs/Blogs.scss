@@ -18,8 +18,8 @@
     margin: 2rem;
     padding: 1rem;
     border-radius: 0.5rem;
-    background-color: #fff;
-    color: #000;
+    background-color: var(--primary-color);
+    color: var(--gray-color);
 
     cursor: pointer;
     transition: all 0.3s ease;
@@ -42,7 +42,7 @@
 }
 
 //dark theme
-.app__blog-portfolio {
+.app__blog-portfolio__dark {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

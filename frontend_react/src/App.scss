@@ -3,8 +3,13 @@
   font-family: var(--font-base);
 }
 
-.app__whitebg {
-  // background-color: var(--white-color);
+//Light theme
+.app__whitebg__light {
+  background-color: var(--white-color);
+}
+
+//Dark theme
+.app__whitebg__dark {
   background-color: var(--prussianBlue-color);
 }
 
@@ -14,7 +19,7 @@
 }
 
 //Dark theme
-.app__primarybg {
+.app__primarybg__dark {
   background-color: var(--prussianBlue-color);
 }
 
@@ -44,7 +49,7 @@
 }
 
 //Light theme
-.copyright {
+.copyright__light {
   width: 100%;
   padding: 2rem 0 0;
 
@@ -60,7 +65,7 @@
 }
 
 //dark theme
-.copyright {
+.copyright__dark {
   width: 100%;
   padding: 2rem 0 0;
 
@@ -76,11 +81,11 @@
 }
 
 //light theme
-.head-text {
+.head-text__light {
   font-size: 2.75rem;
   font-weight: 800;
   text-align: center;
-  color: var(--black-color);
+  color: var(--gray-color);
   text-transform: capitalize;
 
   span {
@@ -97,7 +102,7 @@
 }
 
 //Dark theme
-.head-text {
+.head-text__dark {
   font-size: 2.75rem;
   font-weight: 800;
   text-align: center;
@@ -130,7 +135,7 @@
 }
 
 //dark theme
-.p-text {
+.p-text__dark {
   font-size: 0.8rem;
   text-align: left;
   color: var(--blueGray-color);
@@ -158,7 +163,7 @@
 }
 
 //dark theme
-.bold-text {
+.bold-text__dark {
   font-size: 1rem;
   font-weight: 800;
   color: var(--white-color);
@@ -226,7 +231,7 @@
 }//app__socials
 
 //dark theme
-.app__social {
+.app__social__dark {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -255,7 +260,7 @@
     }
 
     &:hover {
-      background-color: var(--prussianBlue-color);
+      background-color: var(--blueGray-color);
       border-color: var(--white-color);
 
       svg {
@@ -320,7 +325,7 @@
 
 //Dark theme
 //navigation dots
-.app__navigation {
+.app__navigation__dark {
   display: flex;
   justify-content: center;
   align-items: center;

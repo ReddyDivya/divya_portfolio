@@ -7,8 +7,7 @@
     align-items: center;
   
     padding: 1rem 2rem;
-    // background: rgba(255, 255, 255, 0.25);
-    background:#0e0e0e;
+    background: var(--primary-color);/* Light background */
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
@@ -18,7 +17,7 @@
   }
 
 //Dark theme
-.app__navbar {
+.app__navbar__dark {
   width: 100%;
 
   display: flex;
@@ -53,7 +52,7 @@
 }
 
 //Dark theme
-.app__navbar-logo {
+.app__navbar-logo__dark {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -124,7 +123,7 @@
 }
 
 //Dark theme
-.app__navbar-links {
+.app__navbar-links__dark {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -268,7 +267,7 @@
 
 //Dark theme
 //menu icon & side bar navbar-menu in mobile view
-.app__navbar-menu {
+.app__navbar-menu__dark {
   width: 35px;
   height: 35px;
   border-radius: 50%;

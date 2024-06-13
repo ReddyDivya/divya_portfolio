@@ -1,7 +1,7 @@
 //Light theme
-#home__light {
+#home {
   position: relative;
-  background: url("../../assets/bgIMG.png");
+  // background: url("../../assets/bgIMG.png");
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
@@ -16,29 +16,55 @@
   }
 }//#home 
 
-//Dark theme
-#home {
-  position: relative;
-  background-color: var(--prussianBlue-color);
+// //Dark theme
+// #home__dark {
+//   position: relative;
+//   background-color: var(--prussianBlue-color);
   
-  // disable the default padding styles
-  .app__wrapper {
-    padding: 0;
+//   // disable the default padding styles
+//   .app__wrapper {
+//     padding: 0;
 
-    .copyright {
-      display: none;
-    }
-  }
-}//#home 
+//     .copyright {
+//       display: none;
+//     }
+//   }
+// }//#home 
 
-//Light & Dark theme
-.app__header {
+//Light theme
+.app__header__light {
   flex: 1;
   width: 100%;
   height: 100%;
   flex-direction: row;
 
   padding: 6rem 2rem 0rem;
+  position: relative;
+  background: url("../../assets/bgIMG.png");
+
+  @media screen and (min-width: 2000px) {
+    padding-top: 8rem;
+  }
+
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 450px) {
+    padding: 6rem 1rem 2rem;
+  }
+}//app__header
+
+//dark
+.app__header__dark {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+
+  padding: 6rem 2rem 0rem;
+  position: relative;
+  background-color: var(--prussianBlue-color);
 
   @media screen and (min-width: 2000px) {
     padding-top: 8rem;
@@ -117,7 +143,7 @@
 
 //Dark theme
 //Header badge to show "I am Divya"
-.app__header-badge {
+.app__header-badge__dark {
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -234,7 +260,7 @@
 
 //Dark theme
 //Header badge to show my skills - react, redux, tailwind css icons
-.app__header-circles {
+.app__header-circles__dark {
   flex: 0.75;
   display: flex;
   flex-direction: column;
@@ -336,7 +362,7 @@
 }//app__header-img__light
 
 //Dark theme
-.app__header-img {
+.app__header-img__dark {
   flex: 1;
   height: 100%;
 

@@ -1,9 +1,12 @@
 import React from 'react';
 import {NavigationDots, SocialMedia} from "../components";
+import { useTheme } from '../context/theme-Context.js';
 
 const AppWrap = (Component, idName, classNames) => function HOC(){
+  const {theme} = useTheme();
+
   return (
-    <div id={idName} className={`app__container ${classNames}`}>
+    <div id={`${idName}__${theme}`} className={`app__container ${classNames}__${theme}`}>
         <SocialMedia/>
         <div className="app__wrapper app__flex">
             <Component/>

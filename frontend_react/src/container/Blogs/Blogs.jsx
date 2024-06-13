@@ -3,8 +3,10 @@ import  "./Blogs.scss";
 import {AppWrap, MotionWrap} from "../../wrapper";
 import { motion } from 'framer-motion';
 import {SiHashnode} from "react-icons/si";
+import { useTheme } from '../../context/theme-Context.js';
 
 const Blogs = () => {
+    const {theme} = useTheme();
     const [posts, setPosts] = useState([]);
 
     const fetchPosts = async (query) => {
@@ -52,10 +54,10 @@ const Blogs = () => {
 
   return (
     <>
-        <h2 className="head-text">Blogs</h2>
+        <h2 className={`head-text__${theme}`}>Blogs</h2>
         <motion.div
           transition={{ duration: 0.5, delayChildren: 0.5 }}
-          className="app__blog-portfolio"
+          className={`app__blog-portfolio__${theme}`}
         >
         {posts.map((post, index) => (
           <div className="app__blog-item app__flex" key={index}>
@@ -82,7 +84,7 @@ const Blogs = () => {
             </div>
 
             <div className="app__blog-content app__flex">
-              <h4 className="bold-text">{post.node.title}</h4>
+              <h4 className={`bold-text__${theme}`}>{post.node.title}</h4>
               {/* <p className="p-text" style={{ marginTop: 10 }}>{post.node.brief}</p> */}
             </div>
           </div>

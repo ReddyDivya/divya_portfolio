@@ -5,8 +5,10 @@ import { motion } from 'framer-motion';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { urlFor, client } from '../../client';
 import './Work.scss';
+import { useTheme } from '../../context/theme-Context.js';
 
 const Work = () => {
+  const {theme} = useTheme();
   const [works, setWorks] = useState([]);
   const [filterWork, setFilterWork] = useState([]);
   const [activeFilter, setActiveFilter] = useState('All');
@@ -38,13 +40,13 @@ const Work = () => {
 
   return (
     <>
-      <h2 className="head-text">Projects</h2>
-      <div className="app__work-filter">
+      <h2 className={`head-text__${theme}`}>Projects</h2>
+      <div className={`app__work-filter__${theme}`}>
         {['All', 'React JS', 'Redux', 'Tailwind CSS', 'Java'].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}
-            className={`app__work-filter-item app__flex p-text ${activeFilter === item ? 'item-active' : ''}`}
+            className={`app__work-filter-item app__flex p-text__${theme} ${activeFilter === item ? 'item-active' : ''}`}
           >
             {item}
           </div>
@@ -54,7 +56,7 @@ const Work = () => {
       <motion.div
         animate={animateCard}
         transition={{ duration: 0.5, delayChildren: 0.5 }}
-        className="app__work-portfolio"
+        className={`app__work-portfolio__${theme}`}
       >
         {filterWork.map((work, index) => (
           <div className="app__work-item app__flex" key={index}>
@@ -93,13 +95,13 @@ const Work = () => {
             </div>
 
             <div className="app__work-content app__flex">
-              <h4 className="bold-text">{work.title}</h4>
-              <p className="p-text" style={{ marginTop: 10 }}>{work.description}
-                <h4 className="bold-text">Tech Stack:</h4>
+              <h4 className={`bold-text__${theme}`}>{work.title}</h4>
+              <p className={`p-text__${theme}`} style={{ marginTop: 10 }}>{work.description}
+                <h4 className={`bold-text__${theme}`}>Tech Stack:</h4>
                 <img width="140" src={work.tags[0]} alt="Tech stack"/>
               </p>
               <div className="app__work-tag app__flex">
-                  <p className="p-text" key={work.tags[1]}>{work.tags[1]}</p>
+                  <p className={`p-text__${theme}`} key={work.tags[1]}>{work.tags[1]}</p>
               </div>
             </div>
           </div>

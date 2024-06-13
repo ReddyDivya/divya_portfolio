@@ -2,10 +2,13 @@ import React from 'react';
 import {BsTwitter, BsLinkedin} from "react-icons/bs";
 import {AiFillGithub} from "react-icons/ai";
 import {SiHashnode} from "react-icons/si";
+import { useTheme } from '../context/theme-Context.js';
 
 function SocialMedia() {
+  const {theme} = useTheme();
+
   return (
-    <div className="app__social">
+    <div className={`app__social__${theme}`}>
          <div>
             <a href="https://www.linkedin.com/in/reddy-divya-58025a12b/" target='_blank' rel="noreferrer">
                <BsLinkedin/>
@@ -30,4 +33,4 @@ function SocialMedia() {
   )
 }
 
-export default SocialMedia
+export default SocialMedia;

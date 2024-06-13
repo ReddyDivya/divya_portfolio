@@ -4,8 +4,10 @@ import { Tooltip as ReactTooltip } from 'react-tooltip'
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { urlFor, client } from '../../client.js';
 import './Skills.scss';
+import { useTheme } from '../../context/theme-Context.js';
 
 const Skills = () => {
+  const {theme} = useTheme();
   const [skills, setSkills] = useState([]);
 
   useEffect(() => {
@@ -18,14 +20,14 @@ const Skills = () => {
 
   return (
     <>
-      <h2 className="head-text">Technical Skills</h2>
+      <h2 className={`head-text__${theme}`}>Technical Skills</h2>
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
           {skills.map((skill) => (
             <motion.div
               whileInView={{ opacity: [0, 1] }}
               transition={{ duration: 0.5 }}
-              className="app__skills-item app__flex"
+              className={`app__skills-item__${theme} app__flex`}
               key={skill.name}
             >
               <div
@@ -34,7 +36,7 @@ const Skills = () => {
               >
                 <img src={urlFor(skill.icon)} alt={skill.name} />
               </div>
-              <p className="p-text">{skill.name}</p>
+              <p className={`p-text__${theme}`}>{skill.name}</p>
             </motion.div>
           ))}
         </motion.div>
