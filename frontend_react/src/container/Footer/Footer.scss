@@ -1,252 +1,261 @@
+/* Styles for the footer section */
 .app__footer {
-  flex: 1;
-  width: 100%;
-  flex-direction: column;
+  flex: 1;                     /* Allow the footer to grow and fill available space */
+  width: 100%;                 /* Full width of the container */
+  flex-direction: column;      /* Default layout direction is column */
 
+  /* tablet view: 13/06 */
   @media screen and (max-width: 768px) {
-    flex-direction: column; // Mobile and tablet: Ensure column layout
+    flex-direction: column;   /* column layout */
+  }
+
+  /* Mobile view: 13/06 */
+  @media screen and (max-width: 450px) {
+    width: 100%;      /* Full width */
+    // margin-right:43%; /* center footer */
   }
 }
 
-// Light theme styles for footer cards
+/* Light theme styles for footer cards */
 .app__footer-cards__light {
-  width: 60%; // Large view: 60% width
+  width: 60%;                  /* Large view: 60% width */
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-evenly; /* Evenly space out the cards */
   align-items: center;
-  flex-wrap: wrap;
-  margin: 4em 2rem 2rem; // Margin around the card container
+  flex-wrap: wrap;             /* Wrap the cards if they overflow */
+  margin: 4em 2rem 2rem;       /* Margin around the card container */
 
   .app__footer-card {
-    min-width: 290px; // Minimum width for each card
+    min-width: 290px;          /* Minimum width for each card */
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: row;       /* Layout direction for card content */
+    justify-content: flex-start; /* Align items at the start */
     align-items: center;
-    margin: 1rem 0; // Margin around each card
-    padding: 1rem; // Padding inside each card
-    border-radius: 10px;
-    cursor: pointer;
-    background-color: var(--lightGray-color);
-    transition: all 0.3s ease-in-out;
+    margin: 1rem 0;            /* Margin around each card */
+    padding: 1rem;             /* Padding inside each card */
+    border-radius: 10px;       /* Rounded corners */
+    cursor: pointer;           /* Pointer cursor on hover */
+    background-color: var(--lightGray-color); /* Background color */
+    transition: all 0.3s ease-in-out; /* Smooth transition for changes */
 
     img {
       width: 40px;
       height: 40px;
-      margin: 0 0.7rem; // Margin around the image
+      margin: 0 0.7rem;        /* Margin around the image */
     }
 
     p, a {
-      font-weight: 500; // Font weight for paragraph and anchor text
+      font-weight: 500;        /* Font weight for paragraph and anchor text */
     }
 
     a {
-      text-decoration: none; // Remove underline from links
+      text-decoration: none;   /* Remove underline from links */
     }
 
     &:hover {
-      box-shadow: 0 0 25px #fef4f5; // Shadow on hover
+      box-shadow: 0 0 25px #fef4f5; /* Shadow on hover */
     }
 
     @media screen and (max-width: 450px) {
-      width: 100%; // Mobile: Full width
+      width: 100%;             /* Mobile: Full width */
     }
   }
 
   @media screen and (max-width: 768px) {
-    width: 100%; // Mobile and tablet: Full width
+    width: 100%;               /* Mobile and tablet: Full width */
   }
 }
 
-// Dark theme styles for footer cards
+/* Dark theme styles for footer cards */
 .app__footer-cards__dark {
-  width: 60%; // Large view: 60% width
+  width: 60%;                  /* Large view: 60% width */
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-evenly; /* Evenly space out the cards */
   align-items: center;
-  flex-wrap: wrap;
-  margin: 4em 2rem 2rem; // Margin around the card container
+  flex-wrap: wrap;             /* Wrap the cards if they overflow */
+  margin: 4em 2rem 2rem;       /* Margin around the card container */
 
   .app__footer-card {
-    min-width: 290px; // Minimum width for each card
+    min-width: 290px;          /* Minimum width for each card */
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: row;       /* Layout direction for card content */
+    justify-content: flex-start; /* Align items at the start */
     align-items: center;
-    margin: 1rem 0; // Margin around each card
-    padding: 1rem; // Padding inside each card
-    border-radius: 10px;
-    cursor: pointer;
-    background-color: var(--primary-color);
-    transition: all 0.3s ease-in-out;
+    margin: 1rem 0;            /* Margin around each card */
+    padding: 1rem;             /* Padding inside each card */
+    border-radius: 10px;       /* Rounded corners */
+    cursor: pointer;           /* Pointer cursor on hover */
+    background-color: var(--primary-color); /* Background color */
+    transition: all 0.3s ease-in-out; /* Smooth transition for changes */
 
     img {
       width: 40px;
       height: 40px;
-      margin: 0 0.7rem; // Margin around the image
+      margin: 0 0.7rem;        /* Margin around the image */
     }
 
     p, a {
-      font-weight: 500; // Font weight for paragraph and anchor text
+      font-weight: 500;        /* Font weight for paragraph and anchor text */
     }
 
     a {
-      text-decoration: none; // Remove underline from links
+      text-decoration: none;   /* Remove underline from links */
     }
 
     &:hover {
-      box-shadow: 0 0 25px #fef4f5; // Shadow on hover
+      box-shadow: 0 0 25px #fef4f5; /* Shadow on hover */
     }
 
     @media screen and (max-width: 450px) {
-      width: 100%; // Mobile: Full width
+      width: 100%;             /* Mobile: Full width */
     }
   }
 
   @media screen and (max-width: 768px) {
-    width: 100%; // Mobile and tablet: Full width
+    width: 100%;               /* Mobile and tablet: Full width */
   }
 }
 
+/* Special background for the last card */
 .app__footer-cards .app__footer-card:last-child {
-  background-color: #f2f7fb; // Special background for the last card
+  background-color: #f2f7fb;   /* Special background for the last card */
 }
 
 .app__footer-cards .app__footer-card:last-child:hover {
-  box-shadow: 0 0 25px #f2f7fb; // Hover shadow for the last card
+  box-shadow: 0 0 25px #f2f7fb; /* Hover shadow for the last card */
 }
 
-// Light theme styles for footer form
+/* Light theme styles for footer form */
 .app__footer-form__light {
-  width: 60%; // Large view: 60% width
+  width: 60%;                  /* Large view: 60% width */
   flex-direction: column;
-  margin: 1rem 2rem; // Margin around the form container
+  margin: 1rem 2rem;           /* Margin around the form container */
 
   div {
-    width: 100%; // Full width for form elements
-    margin: 0.75rem 0; // Margin around form elements
-    border-radius: 10px;
-    cursor: pointer;
-    background-color: var(--primary-color);
-    transition: all 0.3s ease-in-out;
-    text-align: center; // Center text in mobile view
+    width: 100%;               /* Full width for form elements */
+    margin: 0.75rem 0;         /* Margin around form elements */
+    border-radius: 10px;       /* Rounded corners */
+    cursor: pointer;           /* Pointer cursor on hover */
+    background-color: var(--primary-color); /* Background color */
+    transition: all 0.3s ease-in-out; /* Smooth transition for changes */
+    text-align: center;        /* Center text in mobile view */
 
     input, textarea {
-      width: 100%; // Full width for inputs and textareas
-      padding: 0.95rem; // Padding inside form elements
+      width: 100%;             /* Full width for inputs and textareas */
+      padding: 0.95rem;        /* Padding inside form elements */
       border: none;
-      border-radius: 7px;
-      background-color: var(--white-color);
-      font-family: var(--font-base);
-      color: var(--secondary-color);
-      outline: none;
+      border-radius: 7px;      /* Rounded corners */
+      background-color: var(--white-color); /* Background color */
+      font-family: var(--font-base); /* Font family */
+      color: var(--secondary-color); /* Text color */
+      outline: none;           /* Remove outline */
     }
 
     textarea {
-      height: 170px; // Fixed height for textarea
+      height: 170px;           /* Fixed height for textarea */
     }
 
     &:hover {
-      box-shadow: 0 0 25px var(--primary-color); // Shadow on hover
+      box-shadow: 0 0 25px var(--primary-color); /* Shadow on hover */
     }
   }
 
   button {
-    padding: 1rem 2rem; // Padding inside button
-    border-radius: 10px;
+    padding: 1rem 2rem;        /* Padding inside button */
+    border-radius: 10px;       /* Rounded corners */
     border: none;
-    background-color: var(--secondary-color);
-    font-weight: 500;
-    color: var(--white-color);
-    outline: none;
-    margin: 2rem 0 0 0; // Margin around button
-    font-family: var(--font-base);
-    transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
-    cursor: pointer;
+    background-color: var(--secondary-color); /* Background color */
+    font-weight: 500;          /* Font weight */
+    color: var(--white-color); /* Text color */
+    outline: none;             /* Remove outline */
+    margin: 2rem 0 0 0;        /* Margin around button */
+    font-family: var(--font-base); /* Font family */
+    transition: cubic-bezier(0.55, 0.085, 0.68, 0.53); /* Smooth transition */
+    cursor: pointer;           /* Pointer cursor on hover */
 
     &:hover {
-      background-color: #2430af; // Background color on hover
+      background-color: #2430af; /* Background color on hover */
     }
   }
 
   @media screen and (max-width: 768px) {
-    width: 100%; // Mobile and tablet: Full width
-    margin: 1rem 0; // Margin adjustment for small screens
+    width: 100%;               /* Mobile and tablet: Full width */
+    margin: 1rem 0;            /* Margin adjustment for small screens */
   }
 
   @media screen and (max-width: 450px) {
     div {
-      text-align: center; // Center text in very small screens
+      text-align: center;      /* Center text in very small screens */
     }
   }
 }
 
-// Dark theme styles for footer form
+/* Dark theme styles for footer form */
 .app__footer-form__dark {
-  width: 60%; // Large view: 60% width
+  width: 60%;                  /* Large view: 60% width */
   flex-direction: column;
-  margin: 1rem 2rem; // Margin around the form container
+  margin: 1rem 2rem;           /* Margin around the form container */
 
   div {
-    width: 100%; // Full width for form elements
-    margin: 0.75rem 0; // Margin around form elements
-    border-radius: 10px;
-    cursor: pointer;
-    background-color: var(--primary-color);
-    transition: all 0.3s ease-in-out;
-    text-align: center; // Center text in mobile view
+    width: 100%;               /* Full width for form elements */
+    margin: 0.75rem 0;         /* Margin around form elements */
+    border-radius: 10px;       /* Rounded corners */
+    cursor: pointer;           /* Pointer cursor on hover */
+    background-color: var(--primary-color); /* Background color */
+    transition: all 0.3s ease-in-out; /* Smooth transition for changes */
+    text-align: center;        /* Center text in mobile view */
 
     input, textarea {
-      width: 100%; // Full width for inputs and textareas
-      padding: 0.95rem; // Padding inside form elements
+      width: 100%;             /* Full width for inputs and textareas */
+      padding: 0.95rem;        /* Padding inside form elements */
       border: none;
-      border-radius: 7px;
-      background-color: var(--white-color);
-      font-family: var(--font-base);
-      color: var(--secondary-color);
-      outline: none;
+      border-radius: 7px;      /* Rounded corners */
+      background-color: var(--white-color); /* Background color */
+      font-family: var(--font-base); /* Font family */
+      color: var(--secondary-color); /* Text color */
+      outline: none;           /* Remove outline */
     }
 
     textarea {
-      height: 170px; // Fixed height for textarea
+      height: 170px;           /* Fixed height for textarea */
     }
 
     &:hover {
-      box-shadow: 0 0 25px var(--primary-color); // Shadow on hover
+      box-shadow: 0 0 25px var(--primary-color); /* Shadow on hover */
     }
   }
 
   button {
-    padding: 1rem 2rem; // Padding inside button
-    border-radius: 10px;
+    padding: 1rem 2rem;        /* Padding inside button */
+    border-radius: 10px;       /* Rounded corners */
     border: none;
-    background-color: var(--darkSlateBlue-color);
-    font-weight: 500;
-    color: var(--lightGray-color);
-    outline: none;
-    margin: 2rem 0 0 0; // Margin around button
-    font-family: var(--font-base);
-    transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
-    cursor: pointer;
+    background-color: var(--darkSlateBlue-color); /* Background color */
+    font-weight: 500;          /* Font weight */
+    color: var(--lightGray-color); /* Text color */
+    outline: none;             /* Remove outline */
+    margin: 2rem 0 0 0;        /* Margin around button */
+    font-family: var(--font-base); /* Font family */
+    transition: cubic-bezier(0.55, 0.085, 0.68, 0.53); /* Smooth transition */
+    cursor: pointer;           /* Pointer cursor on hover */
 
     &:hover {
-      background-color: var(--blueGray-color); // Background color on hover
+      background-color: var(--blueGray-color); /* Background color on hover */
     }
   }
 
   @media screen and (max-width: 768px) {
-    width: 100%; // Mobile and tablet: Full width
-    margin: 1rem 0; // Margin adjustment for small screens
+    width: 100%;               /* Mobile and tablet: Full width */
+    margin: 1rem 0;            /* Margin adjustment for small screens */
   }
 
   @media screen and (max-width: 450px) {
     div {
-      text-align: center; // Center text in very small screens
+      text-align: center;      /* Center text in very small screens */
     }
   }
 }
 
-// Text color for the footer
+/* Text color for the footer */
 .app__footer-text {
-  color: var(--prussianBlue-color); // Text color
+  color: var(--prussianBlue-color); /* Text color */
 }

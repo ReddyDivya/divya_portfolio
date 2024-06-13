@@ -1,359 +1,330 @@
-//Light theme
+// Light theme for navbar
 .app__navbar__light {
-    width: 100%;
-  
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  
-    padding: 1rem 2rem;
-    background: var(--primary-color);/* Light background */
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    position: fixed;
-    z-index: 2;
-  }
+  width: 100%; /* Full width */
+  display: flex; /* Flexbox layout */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center items vertically */
+  padding: 1rem 2rem; /* Padding */
+  background: var(--primary-color); /* Light background */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Shadow effect */
+  backdrop-filter: blur(4px); /* Blur effect */
+  -webkit-backdrop-filter: blur(4px); /* Webkit blur effect */
+  border: 1px solid rgba(255, 255, 255, 0.18); /* Border */
+  position: fixed; /* Fixed position */
+  z-index: 2; /* Stack order */
+}
 
-//Dark theme
+// Dark theme for navbar
 .app__navbar__dark {
-  width: 100%;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 1rem 2rem;
+  width: 100%; /* Full width */
+  display: flex; /* Flexbox layout */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center items vertically */
+  padding: 1rem 2rem; /* Padding */
   background: var(--prussianBlue-color); /* Darker background */
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); /* Darker shadow */
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px); /* Blur effect */
+  -webkit-backdrop-filter: blur(4px); /* Webkit blur effect */
   border: 1px solid rgba(255, 255, 255, 0.18); /* Adjust as necessary */
-  position: fixed;
-  z-index: 2;
+  position: fixed; /* Fixed position */
+  z-index: 2; /* Stack order */
 }
 
-//Light theme
+// Light theme for navbar logo
 .app__navbar-logo__light {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  display: flex; /* Flexbox layout */
+  justify-content: flex-start; /* Align items to the start */
+  align-items: center; /* Center items vertically */
 
   img {
-    width: 90px;
-    height: 20px;
+      width: 90px; /* Image width */
+      height: 20px; /* Image height */
 
-    @media screen and (min-width: 2000px) {
-      width: 180px;
-      height: 40px;
-    }
+      @media screen and (min-width: 2000px) {
+          width: 180px; /* Larger width for bigger screens */
+          height: 40px; /* Larger height for bigger screens */
+      }
   }
 }
 
-//Dark theme
+// Dark theme for navbar logo
 .app__navbar-logo__dark {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  display: flex; /* Flexbox layout */
+  justify-content: flex-start; /* Align items to the start */
+  align-items: center; /* Center items vertically */
 
   img {
-    width: 90px;
-    height: 20px;
+      width: 90px; /* Image width */
+      height: 20px; /* Image height */
 
-    @media screen and (min-width: 2000px) {
-      width: 180px;
-      height: 40px;
-    }
+      @media screen and (min-width: 2000px) {
+          width: 180px; /* Larger width for bigger screens */
+          height: 40px; /* Larger height for bigger screens */
+      }
   }
 
   /* If there's any text or additional styling needed for dark mode, add here */
   color: var(--lightGray-color); /* Ensures any text is light gray for dark mode */
 }
 
-//Light theme
+// Light theme for navbar links
 .app__navbar-links__light {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  list-style: none;
+  flex: 1; /* Flex grow */
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  list-style: none; /* Remove list bullets */
 
   li {
-    margin: 0 1rem;
-    cursor: pointer;
+      margin: 0 1rem; /* Margin around list items */
+      cursor: pointer; /* Pointer cursor on hover */
+      flex-direction: column; /* Column layout */
 
-    flex-direction: column;
+      div {
+          width: 5px; /* Dot width */
+          height: 5px; /* Dot height */
+          background: transparent; /* Transparent background */
+          border-radius: 50%; /* Round dots */
+          margin-bottom: 5px; /* Margin below dots */
+      }
 
-    div {
-      width: 5px;
-      height: 5px;
-      background: transparent;
-      border-radius: 50%;
+      a {
+          color: var(--gray-color); /* Link color */
+          text-decoration: none; /* Remove underline */
+          flex-direction: column; /* Column layout */
+          text-transform: uppercase; /* Uppercase text */
+          font-weight: 500; /* Font weight */
+          transition: all 0.3s ease-in-out; /* Transition effect */
 
-      margin-bottom: 5px;
-    }
-
-    a {
-      color: var(--gray-color);
-      text-decoration: none;
-      flex-direction: column;
-
-      text-transform: uppercase;
-      font-weight: 500;
-
-      transition: all 0.3s ease-in-out;
+          &:hover {
+              color: var(--secondary-color); /* Hover color */
+          }
+      }
 
       &:hover {
-        color: var(--secondary-color);
+          div {
+              background: var(--secondary-color); /* Hover dot color */
+          }
       }
-    }
-
-    &:hover {
-      div {
-        background: var(--secondary-color);
-      }
-    }
   }
 
   @media screen and (max-width: 900px) {
-    display: none;
+      display: none; /* Hide on smaller screens */
   }
 }
 
-//Dark theme
+// Dark theme for navbar links
 .app__navbar-links__dark {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  list-style: none;
+  flex: 1; /* Flex grow */
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  list-style: none; /* Remove list bullets */
 
   li {
-    margin: 0 1rem;
-    cursor: pointer;
+      margin: 0 1rem; /* Margin around list items */
+      cursor: pointer; /* Pointer cursor on hover */
+      flex-direction: column; /* Column layout */
 
-    flex-direction: column;
+      div {
+          width: 5px; /* Dot width */
+          height: 5px; /* Dot height */
+          background: transparent; /* Transparent background */
+          border-radius: 50%; /* Round dots */
+          margin-bottom: 5px; /* Margin below dots */
+      }
 
-    div {
-      width: 5px;
-      height: 5px;
-      background: transparent;
-      border-radius: 50%;
+      a {
+          color: var(--lightGray-color); /* Light gray for dark mode */
+          text-decoration: none; /* Remove underline */
+          flex-direction: column; /* Column layout */
+          text-transform: uppercase; /* Uppercase text */
+          font-weight: 500; /* Font weight */
+          transition: all 0.3s ease-in-out; /* Transition effect */
 
-      margin-bottom: 5px;
-    }
-
-    a {
-      color: var(--lightGray-color); /* Light gray for dark mode */
-      text-decoration: none;
-      flex-direction: column;
-
-      text-transform: uppercase;
-      font-weight: 500;
-
-      transition: all 0.3s ease-in-out;
+          &:hover {
+              color: var(--blueGray-color); /* Secondary color for dark mode */
+          }
+      }
 
       &:hover {
-        color: var(--blueGray-color); /* Secondary color for dark mode */
+          div {
+              background: var(--blueGray-color); /* Secondary color for dark mode */
+          }
       }
-    }
-
-    &:hover {
-      div {
-        background: var(--blueGray-color); /* Secondary color for dark mode */
-      }
-    }
   }
 
   @media screen and (max-width: 900px) {
-    display: none;
+      display: none; /* Hide on smaller screens */
   }
-}//app__navbar-links__dark
+}
 
-//Light theme
+// Light theme for navbar menu (hamburger menu) in mobile/tablet view
 .app__navbar-menu__light {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  position: relative;
+  width: 35px; /* Button width */
+  height: 35px; /* Button height */
+  border-radius: 50%; /* Round button */
+  position: relative; /* Relative positioning */
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  background-color: var(--secondary-color); /* Button background color */
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--secondary-color);
-
-
+  //Menu icon 
   svg {
-    width: 70%;
-    height: 70%;
-    color: var(--white-color);
+      width: 70%; /* Icon width */
+      height: 70%; /* Icon height */
+      color: var(--white-color); /* Icon color */
   }
 
+  //Side bar - Nav menu
   div {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 5;
+      position: fixed; /* Fixed positioning */
+      top: 0; /* Align to top */
+      bottom: 0; /* Align to bottom */
+      right: 0; /* Align to right */
+      z-index: 5; /* Stack order */
+      padding: 1rem; /* Padding */
+      width: 70%; /* Sidebar width */
+      height: 100vh; /* Full height */
+      display: flex; /* Flexbox layout */
+      justify-content: flex-end; /* Align items to end */
+      align-items: flex-end; /* Align items to end */
+      flex-direction: column; /* Column layout */
+      background: url('../../assets/bgWhite.png'); /* Background image */
+      background-color: var(--white-color); /* Background color */
+      background-size: cover; /* Cover background */
+      background-repeat: repeat; /* Repeat background */
+      box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15); /* Box shadow */
 
-    padding: 1rem;
-
-    width: 80%;
-    height: 100vh;
-    
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex-direction: column;
-    
-    background: url('../../assets/bgWhite.png');
-    background-color: var(--white-color);
-    background-size: cover;
-    background-repeat: repeat;
-
-    /* top box shadow */
-    box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
-
-    svg {
-      width: 35px;
-      height: 35px;
-      color: var(--secondary-color);
-      margin: 0.5rem 1rem;
-    }
-
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
-
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-      flex-direction: column;
-
-      li {
-        margin: 1rem;
-
-        a {
-          color: var(--gray-color);
-          text-decoration: none;
-          font-size: 1rem;
-          text-transform: uppercase;
-          font-weight: 500;
-
-          transition: all 0.3s ease-in-out;
-
-          &:hover {
-            color: var(--secondary-color);
-          }
-        }
+      //Close (X) icon
+      svg {
+          width: 35px; /* Close icon width */
+          height: 35px; /* Close icon height */
+          color: var(--secondary-color); /* Close icon color */
+          margin: 0.5rem 12rem; /* Margin around close icon */
       }
-    }
 
-    @media screen and (min-width: 900px) {
-      display: none;
-    }
+      ul {
+          list-style: none; /* Remove list bullets */
+          margin: 0; /* Reset margin */
+          padding: 0; /* Reset padding */
+          height: 100%; /* Full height */
+          width: 100%; /* Full width */
+          display: flex; /* Flexbox layout */
+          justify-content: flex-start; /* Align items to start */
+          align-items: flex-start; /* Align items to start */
+          flex-direction: column; /* Column layout */
+
+          li {
+              margin: 1rem; /* Margin around list items */
+
+              a {
+                  color: var(--gray-color); /* Link color */
+                  text-decoration: none; /* Remove underline */
+                  font-size: 1rem; /* Font size */
+                  text-transform: uppercase; /* Uppercase text */
+                  font-weight: 500; /* Font weight */
+                  transition: all 0.3s ease-in-out; /* Transition effect */
+
+                  &:hover {
+                      color: var(--secondary-color); /* Hover color */
+                  }
+              }
+          }
+      }
+
+      @media screen and (min-width: 900px) {
+          display: none; /* Hide on larger screens */
+      }
   }
 
   @media screen and (min-width: 900px) {
-    display: none;
+      display: none; /* Hide on larger screens */
   }
-}//app__navbar-menu__light
+}
 
-//Dark theme
-//menu icon & side bar navbar-menu in mobile view
+// Dark theme for navbar menu (hamburger menu) in mobile view
 .app__navbar-menu__dark {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  position: relative;
+  width: 35px; /* Button width */
+  height: 35px; /* Button height */
+  border-radius: 50%; /* Round button */
+  position: relative; /* Relative positioning */
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  background-color: var(--prussianBlue-color); /* Button background color for dark mode */
+  color: var(--white-color); /* Button color */
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--prussianBlue-color); /* Adjusted for dark mode */
-
+  //menu icon
   svg {
-    width: 70%;
-    height: 70%;
-    color: var(--lightGray-color); /* Assuming white color works for dark mode */
+      width: 70%; /* Icon width */
+      height: 70%; /* Icon height */
+      color: var(--lightGray-color); /* Icon color for dark mode */
   }
 
+  //Side bar - nav menu
   div {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 5;
+      position: fixed; /* Fixed positioning */
+      top: 0; /* Align to top */
+      bottom: 0; /* Align to bottom */
+      right: 0; /* Align to right */
+      z-index: 5; /* Stack order */
+      padding: 1rem; /* Padding */
+      width: 70%; /* Sidebar width */
+      height: 100vh; /* Full height */
+      display: flex; /* Flexbox layout */
+      justify-content: flex-end; /* Align items to end */
+      align-items: flex-end; /* Align items to end */
+      flex-direction: column; /* Column layout */
+      background-color: var(--prussianBlue-color); /* Background color for dark mode */
+      background-size: cover; /* Cover background */
+      background-repeat: repeat; /* Repeat background */
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Box shadow for dark mode */
 
-    padding: 1rem;
-
-    width: 80%;
-    height: 100vh;
-
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex-direction: column;
-
-    background: url('../../assets/bgWhite.png'); /* Adjusted for dark mode */
-    background-color: var(--dark-color); /* Adjusted for dark mode */
-    background-size: cover;
-    background-repeat: repeat;
-
-    /* top box shadow */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Adjusted for dark mode */
-
-    //TODO:primary-dark-color
-    svg {
-      width: 35px;
-      height: 35px;
-      color: var(-primary-dark-color);/* Adjusted for dark mode */
-      margin: 0.5rem 1rem;
-    }
-
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
-
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-      flex-direction: column;
-
-      li {
-        margin: 1rem;
-
-        a {
-          color: var(--light-gray-color); /* Adjusted for dark mode */
-          text-decoration: none;
-          font-size: 1rem;
-          text-transform: uppercase;
-          font-weight: 500;
-
-          transition: all 0.3s ease-in-out;
-
-          &:hover {
-            color: var(--blueGray-color); /* Adjusted for dark mode */
-          }
-        }
+      //X icon
+      svg {
+          width: 35px; /* Close icon width */
+          height: 35px; /* Close icon height */
+          color: var(--white-color); /* Close icon color for dark mode */
+          margin: 0.5rem 12rem; /* Margin around close icon */
       }
-    }
 
-    @media screen and (min-width: 900px) {
-      display: none;
-    }
+      ul {
+          list-style: none; /* Remove list bullets */
+          margin: 0; /* Reset margin */
+          padding: 0; /* Reset padding */
+          height: 100%; /* Full height */
+          width: 100%; /* Full width */
+          display: flex; /* Flexbox layout */
+          justify-content: flex-start; /* Align items to start */
+          align-items: flex-start; /* Align items to start */
+          flex-direction: column; /* Column layout */
+
+          li {
+              margin: 1rem; /* Margin around list items */
+
+              a {
+                  color: var(--light-gray-color); /* Link color for dark mode */
+                  text-decoration: none; /* Remove underline */
+                  font-size: 1rem; /* Font size */
+                  text-transform: uppercase; /* Uppercase text */
+                  font-weight: 500; /* Font weight */
+                  transition: all 0.3s ease-in-out; /* Transition effect */
+
+                  &:hover {
+                      color: var(--blueGray-color); /* Hover color for dark mode */
+                  }
+              }
+          }
+      }
+
+      @media screen and (min-width: 900px) {
+          display: none; /* Hide on larger screens */
+      }
   }
 
   @media screen and (min-width: 900px) {
-    display: none;
+      display: none; /* Hide on larger screens */
   }
-}//app__navbar-menu__dark
+}

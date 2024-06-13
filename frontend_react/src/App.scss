@@ -1,6 +1,16 @@
 .app {
   background-color: var(--primary-color);
   font-family: var(--font-base);
+
+  /* tablet view: 13/06*/
+  @media screen and (max-width: 768px) {
+    width:100%;
+  }
+
+  /* Mobile view: 13/06 */
+  @media screen and (max-width: 450px) {
+    width:140%;
+  }
 }
 
 //Light theme
@@ -29,6 +39,7 @@
 
   display: flex;
   flex-direction: row;
+
 }
 
 .app__flex {

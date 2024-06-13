@@ -55,6 +55,15 @@ const Navbar = () => {
                   </a>
                 </li>
               ))}
+
+              {/*Light & Dark themes */}
+              {/* <li>
+                <div onClick ={toggleMode}>
+                  {
+                    theme === "dark" ? <MdLightMode/> : <MdDarkMode/>
+                  }
+                </div>
+              </li> */}
             </ul>
           </motion.div>
         )}

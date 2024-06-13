@@ -1,25 +1,31 @@
+/* Import the DM Sans font from Google Fonts with specific weights (400, 500, 700) */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
-/*css variables*/
+/* CSS variables */
 :root {
+  /* Define the base font family to be used throughout the site */
   --font-base: "DM Sans", sans-serif;
 
-  --primary-color: #edf2f8;
-  --secondary-color: #313bac;
-  --black-color: #030303;
-  --lightGray-color: #e4e4e4;
-  --gray-color: #6b7688;
-  --brown-color: #46364a;
-  --white-color: #ffffff;
-  --blueGray-color: #7393B3;
-  --prussianBlue-color: #0C2340;
-  --darkSlateBlue-color: #244e6a;
-  --gainsBoro-color:#CBCBCB;
+  /* Define primary and secondary colors */
+  --primary-color: #edf2f8;      /* Light greyish-blue color */
+  --secondary-color: #313bac;    /* Dark blue color */
+
+  /* Define other common colors used in the theme */
+  --black-color: #030303;        /* Near-black color */
+  --lightGray-color: #e4e4e4;    /* Light grey color */
+  --gray-color: #6b7688;         /* Medium grey color */
+  --brown-color: #46364a;        /* Dark brown color */
+  --white-color: #ffffff;        /* Pure white color */
+  --blueGray-color: #7393B3;     /* Blue-grey color */
+  --prussianBlue-color: #0C2340; /* Very dark blue color */
+  --darkSlateBlue-color: #244e6a;/* Dark slate blue color */
+  --gainsBoro-color: #CBCBCB;    /* Light grey color, close to Gainsboro color */
 }
 
+/* Apply common styles to all elements */
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  scroll-behavior: smooth;
+  box-sizing: border-box;        /* Include padding and border in the element's total width and height */
+  padding: 0;                    /* Remove default padding */
+  margin: 0;                     /* Remove default margin */
+  scroll-behavior: smooth;       /* Enable smooth scrolling for the entire page */
 }

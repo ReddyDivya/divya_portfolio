@@ -1,393 +1,379 @@
-//Light theme
+// Light theme
 #home {
   position: relative;
+  // Background image for the light theme
   // background: url("../../assets/bgIMG.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: repeat;
+  background-size: cover;  // Cover the whole area
+  background-position: center;  // Center the background image
+  background-repeat: repeat;  // Repeat the background image
 
-  // disable the default padding styles
+  // Disable the default padding styles
   .app__wrapper {
-    padding: 0;
+    padding: 0;  // Remove padding
 
     .copyright {
-      display: none;
+      display: none;  // Hide copyright
     }
   }
-}//#home 
+} //#home
 
-// //Dark theme
-// #home__dark {
-//   position: relative;
-//   background-color: var(--prussianBlue-color);
-  
-//   // disable the default padding styles
-//   .app__wrapper {
-//     padding: 0;
-
-//     .copyright {
-//       display: none;
-//     }
-//   }
-// }//#home 
-
-//Light theme
+// Light theme
 .app__header__light {
-  flex: 1;
-  width: 100%;
-  height: 100%;
-  flex-direction: row;
+  flex: 1;  // Allow the element to grow
+  width: 100%;  // Full width
+  height: 100%;  // Full height
+  flex-direction: row;  // Row layout
 
-  padding: 6rem 2rem 0rem;
-  position: relative;
-  background: url("../../assets/bgIMG.png");
+  padding: 6rem 2rem 0rem;  // Padding around the header
+  position: relative;  // Relative positioning
+  background: url("../../assets/bgIMG.png");  // Background image for the light theme
 
   @media screen and (min-width: 2000px) {
-    padding-top: 8rem;
+    padding-top: 8rem;  // Extra padding for larger screens
   }
 
   @media screen and (max-width: 1200px) {
-    flex-direction: column;
+    flex-direction: column;  // Column layout for smaller screens
   }
 
   @media screen and (max-width: 450px) {
-    padding: 6rem 1rem 2rem;
+    padding: 6rem 1rem 2rem;  // Adjust padding for smallest screens
   }
-}//app__header
+} // .app__header__light
 
-//dark
+// Dark theme
 .app__header__dark {
-  flex: 1;
-  width: 100%;
-  height: 100%;
-  flex-direction: row;
+  flex: 1;  // Allow the element to grow
+  width: 100%;  // Full width
+  height: 100%;  // Full height
+  flex-direction: row;  // Row layout
 
-  padding: 6rem 2rem 0rem;
-  position: relative;
-  background-color: var(--prussianBlue-color);
+  padding: 6rem 2rem 0rem;  // Padding around the header
+  position: relative;  // Relative positioning
+  background-color: var(--prussianBlue-color);  // Background color for the dark theme
 
   @media screen and (min-width: 2000px) {
-    padding-top: 8rem;
+    padding-top: 8rem;  // Extra padding for larger screens
   }
 
   @media screen and (max-width: 1200px) {
-    flex-direction: column;
+    flex-direction: column;  // Column layout for smaller screens
   }
 
   @media screen and (max-width: 450px) {
-    padding: 6rem 1rem 2rem;
+    padding: 6rem 1rem 2rem;  // Adjust padding for smallest screens
   }
-}//app__header
+} // .app__header__dark
 
-//Light & Dark theme
+// Light & Dark theme
 .app__header-info {
-  flex: 0.65;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  height: 100%;
+  flex: 0.65;  // Take up 65% of the available space
+  display: flex;  // Flexbox layout
+  flex-direction: column;  // Column layout
+  justify-content: flex-start;  // Align items to the start
+  align-items: flex-start;  // Align items to the start
+  height: 100%;  // Full height
 
-  margin: 0 2rem;
+  margin: 0 2rem;  // Margin on the sides
 
   @media screen and (max-width: 1200px) {
-    width: 100%;
-    margin-right: 0rem;
+    width: 100%;  // Full width for smaller screens
+    margin-right: 0rem;  // Remove right margin
   }
-}//app__header-info
+} // .app__header-info
 
-//Light theme
-//Header badge to show "I am Divya"
+// Light theme
+// Header badge to show "I am Divya"
 .app__header-badge__light {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  flex-direction: column;
+  width: 100%;  // Full width
+  display: flex;  // Flexbox layout
+  justify-content: flex-end;  // Align items to the end
+  align-items: flex-end;  // Align items to the end
+  flex-direction: column;  // Column layout
 
   .badge-cmp,
   .tag-cmp {
-    padding: 1rem 2rem;
-    background: var(--white-color);
-    border-radius: 15px;
-    flex-direction: row;
-    width: auto;
+    padding: 1rem 2rem;  // Padding inside the badge
+    background: var(--white-color);  // Background color
+    border-radius: 15px;  // Rounded corners
+    flex-direction: row;  // Row layout
+    width: auto;  // Auto width
 
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);  // Box shadow for light theme
   }
 
   .tag-cmp {
-    flex-direction: column;
-    margin-top: 3rem;
+    flex-direction: column;  // Column layout
+    margin-top: 3rem;  // Top margin
 
     p {
-      width: 100%;
-      text-transform: uppercase;
-      text-align: right;
+      width: 100%;  // Full width
+      text-transform: uppercase;  // Uppercase text
+      text-align: right;  // Align text to the right
     }
   }
 
   span {
-    font-size: 2.5rem;
+    font-size: 2.5rem;  // Font size
 
     @media screen and (min-width: 2000px) {
-      font-size: 5rem;
+      font-size: 5rem;  // Larger font size for bigger screens
     }
   }
 
   @media screen and (max-width: 1200px) {
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: flex-start;  // Align items to the start
+    align-items: flex-start;  // Align items to the start
   }
-}//app__header-badge
+} // .app__header-badge__light
 
-//Dark theme
-//Header badge to show "I am Divya"
+// Dark theme
+// Header badge to show "I am Divya"
 .app__header-badge__dark {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  flex-direction: column;
+  width: 100%;  // Full width
+  display: flex;  // Flexbox layout
+  justify-content: flex-end;  // Align items to the end
+  align-items: flex-end;  // Align items to the end
+  flex-direction: column;  // Column layout
 
   .badge-cmp,
   .tag-cmp {
-    padding: 1rem 2rem;
-    background: var(--darkSlateBlue-color);
-    border-radius: 15px;
-    flex-direction: row;
-    width: auto;
+    padding: 1rem 2rem;  // Padding inside the badge
+    background: var(--darkSlateBlue-color);  // Background color for dark theme
+    border-radius: 15px;  // Rounded corners
+    flex-direction: row;  // Row layout
+    width: auto;  // Auto width
 
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);  // Box shadow for dark theme
   }
 
   .tag-cmp {
-    flex-direction: column;
-    margin-top: 3rem;
+    flex-direction: column;  // Column layout
+    margin-top: 3rem;  // Top margin
 
     p {
-      width: 100%;
-      text-transform: uppercase;
-      text-align: right;
+      width: 100%;  // Full width
+      text-transform: uppercase;  // Uppercase text
+      text-align: right;  // Align text to the right
     }
   }
 
   span {
-    font-size: 2.5rem;
+    font-size: 2.5rem;  // Font size
 
     @media screen and (min-width: 2000px) {
-      font-size: 5rem;
+      font-size: 5rem;  // Larger font size for bigger screens
     }
   }
 
   @media screen and (max-width: 1200px) {
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: flex-start;  // Align items to the start
+    align-items: flex-start;  // Align items to the start
   }
-}//app__header-badge
+} // .app__header-badge__dark
 
-//Light theme
-//Header badge to show my skills - react, redux, tailwind css icons
+// Light theme
+// Header badge to show my skills - react, redux, tailwind css icons
 .app__header-circles__light {
-  flex: 0.75;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  height: 100%;
-  margin-left: 1rem;
+  flex: 0.75;  // Take up 75% of the available space
+  display: flex;  // Flexbox layout
+  flex-direction: column;  // Column layout
+  justify-content: space-evenly;  // Evenly space items
+  align-items: flex-start;  // Align items to the start
+  height: 100%;  // Full height
+  margin-left: 1rem;  // Left margin
 
   div {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+    width: 100px;  // Circle width
+    height: 100px;  // Circle height
+    border-radius: 50%;  // Make the divs circular
 
-    background: var(--white-color);
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    background: var(--white-color);  // Background color for circles
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);  // Box shadow for circles
 
     img {
-      width: 60%;
-      height: 60%;
+      width: 60%;  // Image width inside circles
+      height: 60%;  // Image height inside circles
     }
   }
 
-  // circles with different height & width
+  // Circles with different height & width
 
   div:nth-child(1) {
-    width: 100px;
-    height: 100px;
+    width: 100px;  // First circle width
+    height: 100px;  // First circle height
   }
 
   div:nth-child(2) {
-    margin: 1.75rem;
-    width: 150px;
-    height: 150px;
+    margin: 1.75rem;  // Margin for second circle
+    width: 150px;  // Second circle width
+    height: 150px;  // Second circle height
   }
 
   div:nth-child(3) {
-    width: 70px;
-    height: 70px;
+    width: 70px;  // Third circle width
+    height: 70px;  // Third circle height
   }
 
   @media screen and (min-width: 2000px) {
     div:nth-child(2) {
-      width: 400px;
-      height: 400px;
+      width: 400px;  // Larger second circle for bigger screens
+      height: 400px;  // Larger second circle for bigger screens
     }
 
     div:nth-child(3) {
-      width: 170px;
-      height: 170px;
+      width: 170px;  // Larger third circle for bigger screens
+      height: 170px;  // Larger third circle for bigger screens
     }
 
     div:nth-child(1) {
-      width: 200px;
-      height: 200px;
+      width: 200px;  // Larger first circle for bigger screens
+      height: 200px;  // Larger first circle for bigger screens
     }
   }
 
   @media screen and (max-width: 1200px) {
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: 0;
+    width: 100%;  // Full width for smaller screens
+    flex-direction: row;  // Row layout
+    flex-wrap: wrap;  // Wrap items
+    margin-left: 0;  // Remove left margin
 
     div {
-      margin: 1rem;
+      margin: 1rem;  // Margin for circles
     }
   }
-}//app__header-circles__light
+} // .app__header-circles__light
 
-//Dark theme
-//Header badge to show my skills - react, redux, tailwind css icons
+// Dark theme
+// Header badge to show my skills - react, redux, tailwind css icons
 .app__header-circles__dark {
-  flex: 0.75;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  height: 100%;
-  margin-left: 1rem;
+  flex: 0.75;  // Take up 75% of the available space
+  display: flex;  // Flexbox layout
+  flex-direction: column;  // Column layout
+  justify-content: space-evenly;  // Evenly space items
+  align-items: flex-start;  // Align items to the start
+  height: 100%;  // Full height
+  margin-left: 1rem;  // Left margin
 
   div {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+    width: 100px;  // Circle width
+    height: 100px;  // Circle height
+    border-radius: 50%;  // Make the divs circular
 
-    background: var(--darkSlateBlue-color);
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    background: var(--darkSlateBlue-color);  // Background color for circles in dark theme
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);  // Box shadow for circles
 
     img {
-      width: 60%;
-      height: 60%;
+      width: 60%;  // Image width inside circles
+      height: 60%;  // Image height inside circles
     }
   }
 
-  // circles with different height & width
+  // Circles with different height & width
 
   div:nth-child(1) {
-    width: 100px;
-    height: 100px;
+    width: 100px;  // First circle width
+    height: 100px;  // First circle height
   }
 
   div:nth-child(2) {
-    margin: 1.75rem;
-    width: 150px;
-    height: 150px;
+    margin: 1.75rem;  // Margin for second circle
+    width: 150px;  // Second circle width
+    height: 150px;  // Second circle height
   }
 
   div:nth-child(3) {
-    width: 70px;
-    height: 70px;
+    width: 70px;  // Third circle width
+    height: 70px;  // Third circle height
   }
 
   @media screen and (min-width: 2000px) {
     div:nth-child(2) {
-      width: 400px;
-      height: 400px;
+      width: 400px;  // Larger second circle for bigger screens
+      height: 400px;  // Larger second circle for bigger screens
     }
 
     div:nth-child(3) {
-      width: 170px;
-      height: 170px;
+      width: 170px;  // Larger third circle for bigger screens
+      height: 170px;  // Larger third circle for bigger screens
     }
 
     div:nth-child(1) {
-      width: 200px;
-      height: 200px;
+      width: 200px;  // Larger first circle for bigger screens
+      height: 200px;  // Larger first circle for bigger screens
     }
   }
 
   @media screen and (max-width: 1200px) {
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: 0;
+    width: 100%;  // Full width for smaller screens
+    flex-direction: row;  // Row layout
+    flex-wrap: wrap;  // Wrap items
+    margin-left: 0;  // Remove left margin
 
     div {
-      margin: 1rem;
+      margin: 1rem;  // Margin for circles
     }
   }
-}//app__header-circles
+} // .app__header-circles__dark
 
-//Light theme
+// Light theme
 .app__header-img__light {
-  flex: 1;
-  height: 100%;
+  flex: 1;  // Take up the available space
+  height: 100%;  // Full height
 
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  position: relative;
+  display: flex;  // Flexbox layout
+  justify-content: flex-end;  // Align items to the end
+  align-items: flex-end;  // Align items to the end
+  position: relative;  // Relative positioning
 
   img {
-    width: 100%;
-    object-fit: contain;
-    z-index: 1;
+    width: 100%;  // Full width
+    object-fit: contain;  // Contain the image
+    z-index: 1;  // Stack order
   }
 
   .overlay_circle {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 0;
-    width: 100%;
-    height: 90%;
+    position: absolute;  // Absolute positioning
+    left: 0;  // Align to the left
+    right: 0;  // Align to the right
+    bottom: 0;  // Align to the bottom
+    z-index: 0;  // Stack order
+    width: 100%;  // Full width
+    height: 90%;  // Almost full height
   }
 
   @media screen and (max-width: 1200px) {
-    margin: 2rem 0;
+    margin: 2rem 0;  // Margin on smaller screens
   }
-}//app__header-img__light
+} // .app__header-img__light
 
-//Dark theme
+// Dark theme
 .app__header-img__dark {
-  flex: 1;
-  height: 100%;
+  flex: 1;  // Take up the available space
+  height: 100%;  // Full height
 
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  position: relative;
+  display: flex;  // Flexbox layout
+  justify-content: flex-end;  // Align items to the end
+  align-items: flex-end;  // Align items to the end
+  position: relative;  // Relative positioning
 
   img {
-    width: 100%;
-    object-fit: contain;
-    z-index: 1;
+    width: 100%;  // Full width
+    object-fit: contain;  // Contain the image
+    z-index: 1;  // Stack order
   }
 
   .overlay_circle {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 0;
-    width: 100%;
-    height: 90%;
+    position: absolute;  // Absolute positioning
+    left: 0;  // Align to the left
+    right: 0;  // Align to the right
+    bottom: 0;  // Align to the bottom
+    z-index: 0;  // Stack order
+    width: 100%;  // Full width
+    height: 90%;  // Almost full height
   }
 
   @media screen and (max-width: 1200px) {
-    margin: 2rem 0;
+    margin: 2rem 0;  // Margin on smaller screens
   }
-}//app__header-img
+} // .app__header-img__dark
