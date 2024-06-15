@@ -4,7 +4,7 @@
 
   //Mobile view
   @media screen and (max-width: 450px) {
-    margin-right:-14%;
+    margin-right:-11%;
   }
 }
 
@@ -53,6 +53,7 @@
   // Mobile view: Adjust padding for smaller screens
   @media screen and (max-width: 450px) {
     padding: 4rem 1rem 2rem;
+    margin-left: 12%; 
   }
 }
 
