@@ -5,6 +5,7 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 import { client } from '../../client';
 import './Footer.scss';
 import { useTheme } from '../../context/theme-Context.js';
+import SocialMedia from '../../components/SocialMedia.jsx';
 
 const Footer = () => {
   const {theme} = useTheme();
@@ -74,6 +75,7 @@ const Footer = () => {
         </div>
       )} */}
 
+      <SocialMedia app__Socials={"app__SocialContacts"}/>
       {/* Copyright */}
       <div className={`copyright__${theme}`}>
         <p className={`p-text__${theme}`}>Developed with Passion</p>

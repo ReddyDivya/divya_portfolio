@@ -4,16 +4,15 @@
   width: 100%;                 /* Full width of the container */
   flex-direction: column;      /* Default layout direction is column */
 
-  /* tablet view: 13/06 */
+  /* tablet view */
   @media screen and (max-width: 768px) {
     flex-direction: column;   /* column layout */
   }
 
-  /* Mobile view: 13/06 */
-  @media screen and (max-width: 450px) {
-    width: 100%;      /* Full width */
-    // margin-right:43%; /* center footer */
-  }
+  //Mobile view:No need
+  // @media screen and (max-width: 450px) {
+
+  // }  
 }
 
 /* Light theme styles for footer cards */
@@ -56,8 +55,15 @@
       box-shadow: 0 0 25px #fef4f5; /* Shadow on hover */
     }
 
+    //Mobile view
     @media screen and (max-width: 450px) {
-      width: 100%;             /* Mobile: Full width */
+      margin-left:10%;
+      margin-right:60%;
+      padding-left:0;
+      padding-right:0;
+      padding-top:1rem;
+      padding-bottom:1rem;
+      flex-direction: column;  
     }
   }
 
@@ -68,25 +74,27 @@
 
 /* Dark theme styles for footer cards */
 .app__footer-cards__dark {
-  width: 60%;                  /* Large view: 60% width */
+  width: 60%;
   display: flex;
-  justify-content: space-evenly; /* Evenly space out the cards */
+  justify-content: space-evenly;
   align-items: center;
-  flex-wrap: wrap;             /* Wrap the cards if they overflow */
-  margin: 4em 2rem 2rem;       /* Margin around the card container */
+  flex-wrap: wrap;
+  margin: 4em 2rem 2rem;            /* Wrap the cards if they overflow */
 
   .app__footer-card {
-    min-width: 290px;          /* Minimum width for each card */
+    min-width: 290px;
     display: flex;
-    flex-direction: row;       /* Layout direction for card content */
-    justify-content: flex-start; /* Align items at the start */
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
-    margin: 1rem 0;            /* Margin around each card */
-    padding: 1rem;             /* Padding inside each card */
-    border-radius: 10px;       /* Rounded corners */
-    cursor: pointer;           /* Pointer cursor on hover */
-    background-color: var(--primary-color); /* Background color */
-    transition: all 0.3s ease-in-out; /* Smooth transition for changes */
+
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #fef4f5;
+
+    transition: all 0.3s ease-in-out;
 
     img {
       width: 40px;
@@ -106,8 +114,15 @@
       box-shadow: 0 0 25px #fef4f5; /* Shadow on hover */
     }
 
+    //Mobile view
     @media screen and (max-width: 450px) {
-      width: 100%;             /* Mobile: Full width */
+      margin-left:10%;
+      margin-right:60%;
+      padding-left:0;
+      padding-right:0;
+      padding-top:1rem;
+      padding-bottom:1rem;
+      flex-direction: column;  
     }
   }
 
@@ -258,4 +273,113 @@
 /* Text color for the footer */
 .app__footer-text {
   color: var(--prussianBlue-color); /* Text color */
+}
+
+// Light theme for social section
+.app__SocialContacts__light {
+  display: none;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+
+  div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    margin: 0.25rem 0;
+    border: 1px solid var(--lightGray-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+
+    svg {
+      width: 15px;
+      height: 15px;
+      color: var(--gray-color);
+    }
+
+    &:hover {
+      background-color: var(--secondary-color);
+      border-color: var(--secondary-color);
+
+      svg {
+        color: var(--white-color);
+      }
+    }
+
+    // Larger screens: Increase size
+    @media screen and (min-width: 2000px) {
+      width: 70px;
+      height: 70px;
+      margin: 0.5rem 0;
+
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
+
+// Dark theme for social section
+.app__SocialContacts__dark {
+  display: none;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  padding: 1rem;
+
+  div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--darkSlateBlue-color);
+    margin: 0.25rem 0;
+    border: 1px solid var(--lightGray-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+
+    svg {
+      width: 15px;
+      height: 15px;
+      color: var(--white-color);
+    }
+
+    &:hover {
+      background-color: var(--blueGray-color);
+      border-color: var(--white-color);
+
+      svg {
+        color: var(--white-color);
+      }
+    }
+
+    // Larger screens: Increase size
+    @media screen and (min-width: 2000px) {
+      width: 70px;
+      height: 70px;
+      margin: 0.5rem 0;
+
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .app__SocialContacts__light,
+  .app__SocialContacts__dark
+  {
+    display: flex;
+    flex-direction: row;
+    margin-left:2%;
+    margin-right:12%;
+  }
 }

@@ -328,3 +328,10 @@
       display: none; /* Hide on larger screens */
   }
 }
+
+.app__navbar__themeIcon{
+  //Mobile view
+  @media screen and (max-width: 450px) {
+    margin-left: 65%;
+  }
+}

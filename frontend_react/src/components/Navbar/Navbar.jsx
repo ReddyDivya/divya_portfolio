@@ -26,12 +26,12 @@ const Navbar = () => {
         ))}
 
         {/*Light & Dark themes */}
-        <li className={`app__flex p-text__${theme}`}>
-          <div onClick ={toggleMode}>
-            {
-              theme === "dark" ? <MdLightMode/> : <MdDarkMode/>
-            }
-          </div>
+        <li className={`app__flex p-text__${theme}`} onClick ={toggleMode}>
+            <div>
+              {
+                theme === "dark" ? <MdLightMode style={{ color: '#ffffff' }} /> : <MdDarkMode style={{ color: '#B8B8B8' }} />
+              }
+            </div>
         </li>
       </ul>
 
@@ -57,13 +57,11 @@ const Navbar = () => {
               ))}
 
               {/*Light & Dark themes */}
-              {/* <li>
-                <div onClick ={toggleMode}>
-                  {
-                    theme === "dark" ? <MdLightMode/> : <MdDarkMode/>
-                  }
-                </div>
-              </li> */}
+              <li className={`app__navbar__themeIcon p-text__${theme}`} onClick={toggleMode}>
+              {
+                theme === "dark" ? <MdLightMode style={{ color: '#ffffff' }} /> : <MdDarkMode style={{ color: '#B8B8B8' }} />
+              }
+              </li>
             </ul>
           </motion.div>
         )}

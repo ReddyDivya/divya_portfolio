@@ -2,6 +2,11 @@
   flex: 1;
   width: 100%;
   flex-direction: column;
+
+  //Mobile view
+  @media screen and (max-width: 450px) {
+    margin-right: -0%;
+  }
 }
   
 // Light theme styles
@@ -104,16 +109,19 @@
       border-radius: 0.75rem;
     }
 
-    @media screen and (max-width: 768px) {
-      width: 200px; // Width for tablet view
-      height: 300px; // Height for tablet view
-      margin: 1rem; // Margin for tablet view
-    }
+    //Tablet view
+    // @media screen and (max-width: 768px) {
+    //   width: 200px; // Width for tablet view
+    //   height: 300px; // Height for tablet view
+    //   margin: 1rem; // Margin for tablet view
+    // }
 
+    //Mobile view
     @media screen and (max-width: 480px) {
-      width: 100%; // Width for mobile view
+      width: 70%; // Width for mobile view
       height: auto; // Adjust height for mobile view
-      margin: 1rem; // Margin for mobile view
+      margin-left: 5%;
+      margin-right: 20%;
     }
   }
 }
@@ -146,16 +154,19 @@
       border-radius: 0.75rem;
     }
 
-    @media screen and (max-width: 768px) {
-      width: 200px; // Width for tablet view
-      height: 300px; // Height for tablet view
-      margin: 1rem; // Margin for tablet view
-    }
+    //Tablet view
+    // @media screen and (max-width: 768px) {
+    //   width: 200px; // Width for tablet view
+    //   height: 300px; // Height for tablet view
+    //   margin: 1rem; // Margin for tablet view
+    // }
 
+    //Mobile view
     @media screen and (max-width: 480px) {
-      width: 100%; // Width for mobile view
+      width: 70%; // Width for mobile view
       height: auto; // Adjust height for mobile view
-      margin: 1rem; // Margin for mobile view
+      margin-left: 5%;
+      margin-right: 20%;
     }
   }
 }
@@ -176,13 +187,15 @@
     height: 350px; // Height for very large screens (like 4K)
   }
 
-  @media screen and (max-width: 768px) {
-    height: 200px; // Height for tablet view
-  }
+  //Tablet view
+  // @media screen and (max-width: 768px) {
+  //   height: 200px; // Height for tablet view
+  // }
 
-  @media screen and (max-width: 480px) {
-    height: 140px; // Height for mobile view
-  }
+  //Mobile view
+  // @media screen and (max-width: 480px) {
+  //   height: 140px; // Height for mobile view
+  // }
 }
 
 // Styles for the hover effect on project images
