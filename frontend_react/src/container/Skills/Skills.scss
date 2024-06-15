@@ -1,141 +1,147 @@
 .app__skills {
-  flex: 1;
+  flex: 1; // Take up remaining space within its container (skills section)
   width: 100%;
-  flex-direction: column;
+  flex-direction: column; // Arrange items vertically within the skills section
 
-  //Mobile view
+  // Adjust margin for small screens/Mobile view
   @media screen and (max-width: 450px) {
-    margin-right: -1% !important;
+    margin-right: -1% !important; // Compensate for negative margin on small screens
   }  
 }
 
 .app__skills-container {
-  width: 80%;
-  margin-top: 3rem;
+  width: 80%; // Set width of the container for the skills list
+  margin-top: 3rem; // Add top margin for spacing
 
   display: flex;
-  flex-direction: row;
+  flex-direction: row; // Arrange items horizontally by default
 
+  // Stack items vertically on medium screens
   @media screen and (max-width: 900px) {
-    width: 100%;
-    flex-direction: column;
+    width: 100%; // Full width on smaller screens
+    flex-direction: column; // Stack items vertically
   }
 }
 
 .app__skills-list {
-  flex: 1;
+  flex: 1; // Take up remaining space within its container (skills container)
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
+  flex-wrap: wrap; // Wrap items onto new lines as needed
+  justify-content: flex-start; // Align items to the start of the flex container horizontally
+  align-items: flex-start; // Align items to the start of the cross axis vertically
 
-  margin-right: 5rem;
+  margin-right: 5rem; // Add right margin for spacing
 
+  // Adjust layout for medium screens
   @media screen and (max-width: 900px) {
-    margin-right: 0;
-    justify-content: center;
-    align-items: center;
+    margin-right: 0; // Remove right margin on smaller screens
+    justify-content: center; // Center items horizontally
+    align-items: center; // Center items vertically
   }
 }
 
-//Light theme
+// Styles for skills items in light theme
 .app__skills-item__light {
-  flex-direction: column;
-  text-align: center;
+  flex-direction: column; // Arrange items vertically
+  text-align: center; // Center text horizontally
 
-  margin: 1rem;
+  margin: 1rem; // Set margin around items
 
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; // Smooth transition effect
 
   div {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background-color: varr(--primary-color);
-    border: 1px solid var(--blueGray-color);
+    width: 90px; // Set width of the circular div
+    height: 90px; // Set height of the circular div
+    border-radius: 50%; // Make div circular
+    background-color: var(--primary-color); // Set background color using custom variable
+    border: 1px solid var(--blueGray-color); // Set border color using custom variable
 
     img {
-      width: 50%;
-      height: 50%;
+      width: 50%; // Set size of image inside div
+      height: 50%; // Set size of image inside div
     }
 
     &:hover {
-      box-shadow: 0 0 25px var(--blueGray-color);
+      box-shadow: 0 0 25px var(--blueGray-color); // Apply box shadow on hover
     }
 
+    // Adjust size for very large screens
     @media screen and (min-width: 2000px) {
-      width: 150px;
-      height: 150px;
+      width: 150px; // Increase size of circular div
+      height: 150px; // Increase size of circular div
     }
 
-    //Mobile view
+    // Adjust size for small screens
     @media screen and (max-width: 450px) {
-      width: 70px;
-      height: 70px;
+      width: 70px; // Decrease size of circular div for small screens
+      height: 70px; // Decrease size of circular div for small screens
     }
   }
 
   p {
-    font-weight: 500;
-    margin-top: 0.5rem;
+    font-weight: 500; // Set font weight of paragraphs
+    margin-top: 0.5rem; // Set top margin of paragraphs
   }
 
+  // Adjust margins for very large screens
   @media screen and (min-width: 2000px) {
-    margin: 1rem 2rem;
+    margin: 1rem 2rem; // Increase margin around items
 
     p {
-      margin-top: 1rem;
+      margin-top: 1rem; // Increase top margin of paragraphs
     }
   }
 }
 
-//Dark theme
+// Styles for skills items in dark theme
 .app__skills-item__dark {
-  flex-direction: column;
-  text-align: center;
+  flex-direction: column; // Arrange items vertically
+  text-align: center; // Center text horizontally
 
-  margin: 1rem;
+  margin: 1rem; // Set margin around items
 
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; // Smooth transition effect
 
   div {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background-color: #fef4f5;
-    // background-color: var(--darkSlateBlue-color);
+    width: 90px; // Set width of the circular div
+    height: 90px; // Set height of the circular div
+    border-radius: 50%; // Make div circular
+    background-color: #fef4f5; // Set background color (example in dark theme)
+    // background-color: var(--darkSlateBlue-color); // Example of using custom variable (commented out)
 
     img {
-      width: 50%;
-      height: 50%;
+      width: 50%; // Set size of image inside div
+      height: 50%; // Set size of image inside div
     }
 
     &:hover {
-      box-shadow: 0 0 25px var(--blueGray-color);
+      box-shadow: 0 0 25px var(--blueGray-color); // Apply box shadow on hover
     }
 
+    // Adjust size for very large screens
     @media screen and (min-width: 2000px) {
-      width: 150px;
-      height: 150px;
+      width: 150px; // Increase size of circular div
+      height: 150px; // Increase size of circular div
     }
 
-    //Mobile
+    // Adjust size for small screens
     @media screen and (max-width: 450px) {
-      width: 70px;
-      height: 70px;
+      width: 70px; // Decrease size of circular div for small screens
+      height: 70px; // Decrease size of circular div for small screens
     }
   }
 
   p {
-    font-weight: 500;
-    margin-top: 0.5rem;
+    font-weight: 500; // Set font weight of paragraphs
+    margin-top: 0.5rem; // Set top margin of paragraphs
   }
 
+  // Adjust margins for very large screens
   @media screen and (min-width: 2000px) {
-    margin: 1rem 2rem;
+    margin: 1rem 2rem; // Increase margin around items
 
     p {
-      margin-top: 1rem;
+      margin-top: 1rem; // Increase top margin of paragraphs
     }
   }
 }

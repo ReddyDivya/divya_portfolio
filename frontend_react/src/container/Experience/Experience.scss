@@ -1,92 +1,97 @@
+// Main container for experiences section
 .app__experiences {
-  flex: 1;
-  width: 100%;
-  flex-direction: column;
+  flex: 1; // Occupy remaining space
+  width: 100%; // Occupy full width
+  flex-direction: column; // Arrange items vertically
 
-  //Mobile view
+  // Mobile view adjustments
   @media screen and (max-width: 450px) {
-    margin-right:10%;
-    display:flex;
+    margin-right: 10%; // Adjust right margin for small screens
+    display: flex; // Ensure flexbox display
   }
 }
 
+// Container for individual experience
 .app__experience {
-  flex: 1;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
+  flex: 1; // Occupy remaining space
+  display: flex; // Use flexbox for layout
+  justify-content: flex-start; // Align items to start horizontally
+  align-items: flex-start; // Align items to start vertically
+  flex-direction: column; // Arrange items vertically
 
+  // Tablet view adjustments
   @media screen and (max-width: 900px) {
-    margin-top: 2rem;
+    margin-top: 2rem; // Adjust top margin for tablet view
   }
 }
 
+// Individual experience item
 .app__experience-item {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin: 1rem 0;
+  width: 100%; // Occupy full width
+  display: flex; // Use flexbox for layout
+  flex-direction: row; // Arrange items horizontally
+  justify-content: flex-start; // Align items to start horizontally
+  align-items: flex-start; // Align items to start vertically
+  margin: 1rem 0; // Apply vertical margin
 }
 
+// Container for works within an experience
 .app__experience-works {
-  flex: 1;
+  flex: 1; // Occupy remaining space
 
+  // Individual work item within experience
   .app__experience-work {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-bottom: 1rem;
-    cursor: pointer;
+    display: flex; // Use flexbox for layout
+    flex-direction: column; // Arrange items vertically
+    justify-content: flex-start; // Align items to start horizontally
+    align-items: flex-start; // Align items to start vertically
+    margin-bottom: 1rem; // Apply bottom margin
+    cursor: pointer; // Pointer cursor
 
+    // Title style within work item
     h4 {
-      font-weight: 500;
+      font-weight: 500; // Medium font weight
     }
 
+    // Description style within work item
     p {
-      font-weight: 400;
-      color: var(--gray-color);
-      margin-top: 5px;
+      font-weight: 400; // Normal font weight
+      color: var(--gray-color); // Text color using custom variable
+      margin-top: 5px; // Apply top margin
     }
   }
 }
 
-//Light theme
+// Light theme for experience year
 .app__experience-year__light {
-  margin-right: 3rem;
+  margin-right: 3rem; // Right margin for desktop view
 
+  // Year text style
   p {
-    font-weight: 800;
-    color: var(--secondary-color);
+    font-weight: 800; // Bold font weight
+    color: var(--secondary-color); // Text color using custom variable
   }
 
+  // Mobile view adjustments
   @media screen and (max-width: 450px) {
-    margin-right: 2rem;
-    margin-left: 3%;
+    margin-right: 2rem; // Adjusted right margin for small screens
+    margin-left: 3%; // Adjusted left margin for small screens
   }
 }
 
-//Dark theme
+// Dark theme for experience year
 .app__experience-year__dark {
-  margin-right: 3rem;
+  margin-right: 3rem; // Right margin for desktop view
 
+  // Year text style
   p {
-    font-weight: 800;
-    color: var(--blueGray-color);
+    font-weight: 800; // Bold font weight
+    color: var(--blueGray-color); // Text color using custom variable
   }
 
+  // Mobile view adjustments
   @media screen and (max-width: 450px) {
-    margin-right: 2rem;
-    margin-left: 3%;
+    margin-right: 2rem; // Adjusted right margin for small screens
+    margin-left: 3%; // Adjusted left margin for small screens
   }
 }
-
-// .app__exp_desc{
-//   //Mobile view
-//   @media screen and (max-width: 450px) {
-//     display: none;
-//   }
-// }

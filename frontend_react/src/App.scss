@@ -1,256 +1,255 @@
 .app {
-  background-color: var(--primary-color);
-  font-family: var(--font-base);
+  background-color: var(--primary-color); // Set background color for the entire app
+  font-family: var(--font-base); // Set base font family for the entire app
 
-  //Mobile view
+  // Mobile view adjustments
   @media screen and (max-width: 450px) {
-    margin-right:-10% !important;
+    margin-right: -10% !important; // Adjust margin for small screens
   }
 }
 
 // Light theme background for the app
 .app__whitebg__light {
-  background-color: var(--white-color);
+  background-color: var(--white-color); // Set light background color for specific app sections
 }
 
 // Dark theme background for the app
 .app__whitebg__dark {
-  background-color: var(--prussianBlue-color);
+  background-color: var(--prussianBlue-color); // Set dark background color for specific app sections
 }
 
 // Light theme background for the primary color
 .app__primarybg__light {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color); // Set light background using primary color
 }
 
 // Dark theme background for the primary color
 .app__primarybg__dark {
-  background-color: var(--prussianBlue-color);
+  background-color: var(--prussianBlue-color); // Set dark background using primary color
 }
 
 // Main container for the app layout
 .app__container {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: row;
+  width: 100%; // Occupy full width of its parent
+  min-height: 100vh; // Ensure minimum height of viewport height
+  display: flex; // Use flexbox for layout
+  flex-direction: row; // Arrange items horizontally by default
 }
 
 // Flex container utility class
 .app__flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex; // Use flexbox for layout
+  justify-content: center; // Center items horizontally
+  align-items: center; // Center items vertically
 }
 
 // Wrapper for content with padding
 .app__wrapper {
-  flex: 1;
-  width: 100%;
-  flex-direction: column;
-  padding: 4rem 2rem;
+  flex: 1; // Expand to fill available space
+  width: 100%; // Occupy full width of its parent
+  flex-direction: column; // Arrange items vertically
+  padding: 4rem 2rem; // Apply padding around content
 
-  // Mobile view: Adjust padding for smaller screens
+  // Mobile view adjustments
   @media screen and (max-width: 450px) {
-    padding: 4rem 1rem 2rem;
-    margin-left: 12%; 
+    padding: 4rem 1rem 2rem; // Adjust padding for small screens
+    margin-left: 12%; // Adjust left margin for small screens
   }
 }
 
 // Light theme for the copyright section
 .copyright__light {
-  width: 100%;
-  padding: 2rem 0 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
+  width: 100%; // Occupy full width of its parent
+  padding: 2rem 0 0; // Apply padding
+  display: flex; // Use flexbox for layout
+  flex-direction: column; // Arrange items vertically
+  justify-content: flex-end; // Align items to the end vertically
+  align-items: flex-end; // Align items to the end horizontally
 
   p {
-    text-transform: uppercase;
-    color: var(--black-color);
+    text-transform: uppercase; // Transform text to uppercase
+    color: var(--black-color); // Set text color using custom variable
   }
 
-  //Mobile view
+  // Mobile view adjustments
   @media screen and (max-width: 450px) {
-    margin-right:10%;
+    margin-right: 10%; // Adjust margin for small screens
   }
 }
 
 // Dark theme for the copyright section
 .copyright__dark {
-  width: 100%;
-  padding: 2rem 0 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
+  width: 100%; // Occupy full width of its parent
+  padding: 2rem 0 0; // Apply padding
+  display: flex; // Use flexbox for layout
+  flex-direction: column; // Arrange items vertically
+  justify-content: flex-end; // Align items to the end vertically
+  align-items: flex-end; // Align items to the end horizontally
 
   p {
-    text-transform: uppercase;
-    color: var(--lightGray-color);
+    text-transform: uppercase; // Transform text to uppercase
+    color: var(--lightGray-color); // Set text color using custom variable
   }
-  
-  //Mobile view
+
+  // Mobile view adjustments
   @media screen and (max-width: 450px) {
-    margin-right:10%;
+    margin-right: 10%; // Adjust margin for small screens
   }
 }
 
 // Light theme for head text
 .head-text__light {
-  font-size: 2.75rem;
-  font-weight: 800;
-  text-align: center;
-  color: var(--gray-color);
-  text-transform: capitalize;
+  font-size: 2.75rem; // Set font size
+  font-weight: 800; // Set font weight
+  text-align: center; // Center align text
+  color: var(--gray-color); // Set text color using custom variable
+  text-transform: capitalize; // Capitalize text
 
   span {
-    color: var(--secondary-color);
+    color: var(--secondary-color); // Set color for specific text spans
   }
 
-  // Larger screens: Increase font size
+  // Larger screens adjustments
   @media screen and (min-width: 2000px) {
-    font-size: 4rem;
+    font-size: 4rem; // Increase font size for very large screens
   }
 
-  // Mobile view: Decrease font size
+  // Mobile view adjustments
   @media screen and (max-width: 450px) {
-    font-size: 2rem;
-    margin-right:1%;
+    font-size: 2rem; // Decrease font size for small screens
+    margin-right: 1%; // Adjust margin for small screens
   }
 }
 
 // Dark theme for head text
 .head-text__dark {
-  font-size: 2.75rem;
-  font-weight: 800;
-  text-align: center;
-  color: var(--blueGray-color);
-  text-transform: capitalize;
+  font-size: 2.75rem; // Set font size
+  font-weight: 800; // Set font weight
+  text-align: center; // Center align text
+  color: var(--blueGray-color); // Set text color using custom variable
+  text-transform: capitalize; // Capitalize text
 
   span {
-    color: var(--secondary-color);
+    color: var(--secondary-color); // Set color for specific text spans
   }
 
-  // Larger screens: Increase font size
+  // Larger screens adjustments
   @media screen and (min-width: 2000px) {
-    font-size: 4rem;
+    font-size: 4rem; // Increase font size for very large screens
   }
 
-  // Mobile view: Decrease font size
+  // Mobile view adjustments
   @media screen and (max-width: 450px) {
-    font-size: 2rem;
-    margin-right:1%; 
+    font-size: 2rem; // Decrease font size for small screens
+    margin-right: 1%; // Adjust margin for small screens
   }
 }
 
 // Light theme for paragraph text
 .p-text__light {
-  font-size: 0.8rem;
-  text-align: left;
-  color: var(--gray-color);
-  line-height: 1.5;
+  font-size: 0.8rem; // Set font size
+  text-align: left; // Left align text
+  color: var(--gray-color); // Set text color using custom variable
+  line-height: 1.5; // Set line height
 
-  // Larger screens: Increase font size
+  // Larger screens adjustments
   @media screen and (min-width: 2000px) {
-    font-size: 1.75rem;
+    font-size: 1.75rem; // Increase font size for very large screens
   }
 }
 
 // Dark theme for paragraph text
 .p-text__dark {
-  font-size: 0.8rem;
-  text-align: left;
-  color: var(--blueGray-color);
-  line-height: 1.5;
+  font-size: 0.8rem; // Set font size
+  text-align: left; // Left align text
+  color: var(--blueGray-color); // Set text color using custom variable
+  line-height: 1.5; // Set line height
 
-  // Larger screens: Increase font size
+  // Larger screens adjustments
   @media screen and (min-width: 2000px) {
-    font-size: 1.75rem;
+    font-size: 1.75rem; // Increase font size for very large screens
   }
 }
 
 // Light theme for bold text
 .bold-text__light {
-  font-size: 1rem;
-  font-weight: 800;
-  color: var(--black-color);
-  text-align: left;
+  font-size: 1rem; // Set font size
+  font-weight: 800; // Set font weight
+  color: var(--black-color); // Set text color using custom variable
+  text-align: left; // Left align text
 
-  // Larger screens: Increase font size
+  // Larger screens adjustments
   @media screen and (min-width: 2000px) {
-    font-size: 2rem;
+    font-size: 2rem; // Increase font size for very large screens
   }
 
-  // Mobile view: Decrease font size
+  // Mobile view adjustments
   @media screen and (max-width: 450px) {
-    font-size: 0.9rem;
+    font-size: 0.9rem; // Decrease font size for small screens
   }
 }
 
 // Dark theme for bold text
 .bold-text__dark {
-  font-size: 1rem;
-  font-weight: 800;
-  color: var(--white-color);
-  text-align: left;
+  font-size: 1rem; // Set font size
+  font-weight: 800; // Set font weight
+  color: var(--white-color); // Set text color using custom variable
+  text-align: left; // Left align text
 
-  // Larger screens: Increase font size
+  // Larger screens adjustments
   @media screen and (min-width: 2000px) {
-    font-size: 2rem;
+    font-size: 2rem; // Increase font size for very large screens
   }
 
-  // Mobile view: Decrease font size
+  // Mobile view adjustments
   @media screen and (max-width: 450px) {
-    font-size: 0.9rem;
+    font-size: 0.9rem; // Decrease font size for small screens
   }
 }
 
 // Light theme for social section
 .app__social__light {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: column;
-  padding: 1rem;
+  display: flex; // Use flexbox for layout
+  justify-content: flex-end; // Align items to the end horizontally
+  align-items: center; // Center items vertically
+  flex-direction: column; // Arrange items vertically
+  padding: 1rem; // Apply padding around social section
 
   div {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: var(--white-color);
-    margin: 0.25rem 0;
-    border: 1px solid var(--lightGray-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease-in-out;
+    width: 40px; // Set width of social icons
+    height: 40px; // Set height of social icons
+    border-radius: 50%; // Make icons circular
+    background-color: var(--white-color); // Set background color using custom variable
+    margin: 0.25rem 0; // Apply margin around icons
+    border: 1px solid var(--lightGray-color); // Set border using custom variable
+    display: flex; // Use flexbox for layout
+    justify-content: center; // Center items horizontally
+    align-items: center; // Center items vertically
+    transition: all 0.3s ease-in-out; // Smooth transition effect
 
     svg {
-      width: 15px;
-      height: 15px;
-      color: var(--gray-color);
+      width: 15px; // Set width of SVG icons
+      height: 15px; // Set height of SVG icons
+      color: var(--gray-color); // Set color using custom variable
     }
 
     &:hover {
-      background-color: var(--secondary-color);
-      border-color: var(--secondary-color);
+      background-color: var(--secondary-color); // Change background color on hover
+      border-color: var(--secondary-color); // Change border color on hover
 
       svg {
-        color: var(--white-color);
+        color: var(--white-color); // Change SVG color on hover
       }
     }
 
-    // Larger screens: Increase size
+    // Larger screens adjustments
     @media screen and (min-width: 2000px) {
-      width: 70px;
-      height: 70px;
-      margin: 0.5rem 0;
+      width: 70px; // Increase size of social icons
+      height: 70px; // Increase size of social icons
 
       svg {
-        width: 30px;
-        height: 30px;
+        width: 30px; // Increase size of SVG icons
+        height: 30px; // Increase size of SVG icons
       }
     }
   }
@@ -258,48 +257,47 @@
 
 // Dark theme for social section
 .app__social__dark {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: column;
-  padding: 1rem;
+  display: flex; // Use flexbox for layout
+  justify-content: flex-end; // Align items to the end horizontally
+  align-items: center; // Center items vertically
+  flex-direction: column; // Arrange items vertically
+  padding: 1rem; // Apply padding around social section
 
   div {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: var(--darkSlateBlue-color);
-    margin: 0.25rem 0;
-    border: 1px solid var(--lightGray-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease-in-out;
+    width: 40px; // Set width of social icons
+    height: 40px; // Set height of social icons
+    border-radius: 50%; // Make icons circular
+    background-color: var(--darkSlateBlue-color); // Set background color using custom variable
+    margin: 0.25rem 0; // Apply margin around icons
+    border: 1px solid var(--lightGray-color); // Set border using custom variable
+    display: flex; // Use flexbox for layout
+    justify-content: center; // Center items horizontally
+    align-items: center; // Center items vertically
+    transition: all 0.3s ease-in-out; // Smooth transition effect
 
     svg {
-      width: 15px;
-      height: 15px;
-      color: var(--white-color);
+      width: 15px; // Set width of SVG icons
+      height: 15px; // Set height of SVG icons
+      color: var(--white-color); // Set color using custom variable
     }
 
     &:hover {
-      background-color: var(--blueGray-color);
-      border-color: var(--white-color);
+      background-color: var(--blueGray-color); // Change background color on hover
+      border-color: var(--white-color); // Change border color on hover
 
       svg {
-        color: var(--white-color);
+        color: var(--white-color); // Change SVG color on hover
       }
     }
 
-    // Larger screens: Increase size
+    // Larger screens adjustments
     @media screen and (min-width: 2000px) {
-      width: 70px;
-      height: 70px;
-      margin: 0.5rem 0;
+      width: 70px; // Increase size of social icons
+      height: 70px; // Increase size of social icons
 
       svg {
-        width: 30px;
-        height: 30px;
+        width: 30px; // Increase size of SVG icons
+        height: 30px; // Increase size of SVG icons
       }
     }
   }
@@ -307,79 +305,77 @@
 
 // Light theme for navigation dots
 .app__navigation__light {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 1rem;
+  display: flex; // Use flexbox for layout
+  justify-content: center; // Center items horizontally
+  align-items: center; // Center items vertically
+  flex-direction: column; // Arrange items vertically
+  padding: 1rem; // Apply padding around navigation dots
 
   .app__navigation-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: var(--gainsBoro-color);
-    margin: 0.5rem;
-    transition: background-color 0.2s ease-in-out;
+    width: 10px; // Set width of navigation dot
+    height: 10px; // Set height of navigation dot
+    border-radius: 50%; // Make dot circular
+    background-color: var(--gainsBoro-color); // Set background color using custom variable
+    margin: 0.5rem; // Apply margin around dots
+    transition: background-color 0.2s ease-in-out; // Smooth transition effect
 
     &:hover {
-      background-color: var(--secondary-color);
+      background-color: var(--secondary-color); // Change background color on hover
     }
 
-    // Larger screens: Increase size
+    // Larger screens adjustments
     @media screen and (min-width: 2000px) {
-      width: 20px;
-      height: 20px;
+      width: 20px; // Increase size of navigation dot
+      height: 20px; // Increase size of navigation dot
     }
   }
 }
 
-// Mobile view: Hide navigation and social sections, adjust copyright padding
+// Mobile view adjustments: Hide navigation and social sections, adjust copyright padding
 @media screen and (max-width: 480px) {
   .app__navigation__dark,
   .app__navigation__light,
   .app__social__light,
-  .app__social__dark
-  {
-    display: none;
+  .app__social__dark {
+    display: none; // Hide navigation and social sections
   }
 
-  .copyright__light, 
-  .copyright__dark
-  {
-    display: block;
-    padding: 2rem;
+  .copyright__light,
+  .copyright__dark {
+    display: block; // Show copyright section
+    padding: 2rem; // Adjust padding for small screens
   }
 }
 
 // Dark theme for navigation dots
 .app__navigation__dark {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 1rem;
+  display: flex; // Use flexbox for layout
+  justify-content: center; // Center items horizontally
+  align-items: center; // Center items vertically
+  flex-direction: column; // Arrange items vertically
+  padding: 1rem; // Apply padding around navigation dots
 
   .app__navigation-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: var(--gainsBoro-color);
-    margin: 0.5rem;
-    transition: background-color 0.2s ease-in-out;
+    width: 10px; // Set width of navigation dot
+    height: 10px; // Set height of navigation dot
+    border-radius: 50%; // Make dot circular
+    background-color: var(--gainsBoro-color); // Set background color using custom variable
+    margin: 0.5rem; // Apply margin around dots
+    transition: background-color 0.2s ease-in-out; // Smooth transition effect
 
     &:hover {
-      background-color: var(--blueGray-color);
+      background-color: var(--blueGray-color); // Change background color on hover
     }
 
-    // Larger screens: Increase size
+    // Larger screens adjustments
     @media screen and (min-width: 2000px) {
-      width: 20px;
-      height: 20px;
+      width: 20px; // Increase size of navigation dot
+      height: 20px; // Increase size of navigation dot
     }
   }
 }
 
 // Active navigation dot style
 .app__navigation-dot--active {
-  background-color: var(--prussianBlue-color);
+  background-color: var(--prussianBlue-color); // Set active state background color using custom variable
 }

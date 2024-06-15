@@ -1,259 +1,258 @@
+/* Styles for .app__works section */
 .app__works {
-  flex: 1;
+  flex: 1; /* Take up remaining space */
   width: 100%;
-  flex-direction: column;
+  flex-direction: column; /* Stack children vertically */
 
-  //Mobile view
+  /* Mobile view adjustment */
   @media screen and (max-width: 450px) {
-    margin-right: -10%;
+    margin-right: -10%; /* Negative margin for spacing */
   }
 }
-  
-// Light theme styles
+
+/* Light theme styles for work filter */
 .app__work-filter__light {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 4rem 0 2rem; // Margin for the filter section
+  flex-direction: row; /* Arrange items horizontally */
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center; /* Center items vertically */
+  flex-wrap: wrap; /* Wrap items to new row when necessary */
+  margin: 4rem 0 2rem; /* Top, bottom margins; adjusts for spacing */
 
+  /* Individual filter item style */
   .app__work-filter-item {
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    background-color: var(--lightGray-color);
-    color: #000;
-    font-weight: 800;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin: 0.5rem;
+    padding: 0.5rem 1rem; /* Padding around item */
+    border-radius: 0.5rem; /* Rounded corners */
+    background-color: var(--lightGray-color); /* Background color */
+    color: #000; /* Text color */
+    font-weight: 800; /* Bold font weight */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition effect */
+    margin: 0.5rem; /* Margin around items */
 
+    /* Hover effect */
     &:hover {
-      background-color: var(--secondary-color);
-      color: #fff;
+      background-color: var(--secondary-color); /* Background color on hover */
+      color: #fff; /* Text color on hover */
     }
 
+    /* Very large screens */
     @media screen and (min-width: 2000px) {
-      padding: 1rem 2rem; // Padding for very large screens (like 4K)
-      border-radius: 0.85rem;
+      padding: 1rem 2rem; /* Adjusted padding */
+      border-radius: 0.85rem; /* Adjusted border radius */
     }
   }
 
+  /* Active item style */
   .item-active {
-    background-color: var(--secondary-color);
-    color: #fff;
+    background-color: var(--secondary-color); /* Background color for active state */
+    color: #fff; /* Text color for active state */
   }
 }
 
-// Dark theme styles
+/* Dark theme styles for work filter */
 .app__work-filter__dark {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 4rem 0 2rem; // Margin for the filter section
+  flex-direction: row; /* Arrange items horizontally */
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center; /* Center items vertically */
+  flex-wrap: wrap; /* Wrap items to new row when necessary */
+  margin: 4rem 0 2rem; /* Top, bottom margins; adjusts for spacing */
 
+  /* Individual filter item style */
   .app__work-filter-item {
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    background-color: var(--lightGray-color);
-    color: var(--darkSlateBlue-color);
-    font-weight: 800;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin: 0.5rem;
+    padding: 0.5rem 1rem; /* Padding around item */
+    border-radius: 0.5rem; /* Rounded corners */
+    background-color: var(--lightGray-color); /* Background color */
+    color: var(--darkSlateBlue-color); /* Text color */
+    font-weight: 800; /* Bold font weight */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition effect */
+    margin: 0.5rem; /* Margin around items */
 
+    /* Hover effect */
     &:hover {
-      background-color: var(--blueGray-color);
-      color: var(--prussianBlue-color);
+      background-color: var(--blueGray-color); /* Background color on hover */
+      color: var(--prussianBlue-color); /* Text color on hover */
     }
 
+    /* Very large screens */
     @media screen and (min-width: 2000px) {
-      padding: 1rem 2rem; // Padding for very large screens (like 4K)
-      border-radius: 0.85rem;
+      padding: 1rem 2rem; /* Adjusted padding */
+      border-radius: 0.85rem; /* Adjusted border radius */
     }
   }
 
+  /* Active item style */
   .item-active {
-    background-color: var(--darkSlateBlue-color);
-    color: #fff;
+    background-color: var(--darkSlateBlue-color); /* Background color for active state */
+    color: #fff; /* Text color for active state */
   }
 }
 
-// Light theme styles for portfolio items
+/* Light theme styles for portfolio items */
 .app__work-portfolio__light {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap; /* Wrap items to new row when necessary */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
 
+  /* Individual portfolio item style */
   .app__work-item {
-    width: 270px; // Default width for PC view
-    flex-direction: column;
-    margin: 2rem; // Default margin for PC view
-    padding: 1rem;
-    border-radius: 0.5rem;
-    background-color: var(--lightGray-color);
-    color: #000;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    width: 270px; /* Default width for PC view */
+    flex-direction: column; /* Stack children vertically */
+    margin: 2rem; /* Default margin around item */
+    padding: 1rem; /* Padding around item */
+    border-radius: 0.5rem; /* Rounded corners */
+    background-color: var(--lightGray-color); /* Background color */
+    color: #000; /* Text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition effect */
 
+    /* Hover effect */
     &:hover {
-      box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
     }
 
+    /* Very large screens */
     @media screen and (min-width: 2000px) {
-      width: 470px; // Width for very large screens (like 4K)
-      padding: 1.25rem;
-      border-radius: 0.75rem;
+      width: 470px; /* Adjusted width for very large screens */
+      padding: 1.25rem; /* Adjusted padding */
+      border-radius: 0.75rem; /* Adjusted border radius */
     }
 
-    //Tablet view
-    // @media screen and (max-width: 768px) {
-    //   width: 200px; // Width for tablet view
-    //   height: 300px; // Height for tablet view
-    //   margin: 1rem; // Margin for tablet view
-    // }
-
-    //Mobile view
+    /* Mobile view */
     @media screen and (max-width: 480px) {
-      width: 70%; // Width for mobile view
-      height: auto; // Adjust height for mobile view
-      margin-left: 5%;
-      margin-right: 20%;
+      width: 70%; /* Width for mobile view */
+      height: auto; /* Adjust height for mobile view */
+      margin-left: 5%; /* Left margin for spacing */
+      margin-right: 20%; /* Right margin for spacing */
     }
   }
 }
 
-// Dark theme styles for portfolio items
+/* Dark theme styles for portfolio items */
 .app__work-portfolio__dark {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap; /* Wrap items to new row when necessary */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
 
+  /* Individual portfolio item style */
   .app__work-item {
-    width: 270px; // Default width for PC view
-    flex-direction: column;
-    margin: 2rem; // Default margin for PC view
-    padding: 1rem;
-    border-radius: 0.5rem;
-    background-color: var(--darkSlateBlue-color);
-    color: #000;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    width: 270px; /* Default width for PC view */
+    flex-direction: column; /* Stack children vertically */
+    margin: 2rem; /* Default margin around item */
+    padding: 1rem; /* Padding around item */
+    border-radius: 0.5rem; /* Rounded corners */
+    background-color: var(--darkSlateBlue-color); /* Background color */
+    color: #000; /* Text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition effect */
 
+    /* Hover effect */
     &:hover {
-      box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
     }
 
+    /* Very large screens */
     @media screen and (min-width: 2000px) {
-      width: 470px; // Width for very large screens (like 4K)
-      padding: 1.25rem;
-      border-radius: 0.75rem;
+      width: 470px; /* Adjusted width for very large screens */
+      padding: 1.25rem; /* Adjusted padding */
+      border-radius: 0.75rem; /* Adjusted border radius */
     }
 
-    //Tablet view
-    // @media screen and (max-width: 768px) {
-    //   width: 200px; // Width for tablet view
-    //   height: 300px; // Height for tablet view
-    //   margin: 1rem; // Margin for tablet view
-    // }
-
-    //Mobile view
+    /* Mobile view */
     @media screen and (max-width: 480px) {
-      width: 70%; // Width for mobile view
-      height: auto; // Adjust height for mobile view
-      margin-left: 5%;
-      margin-right: 20%;
+      width: 70%; /* Width for mobile view */
+      height: auto; /* Adjust height for mobile view */
+      margin-left: 5%; /* Left margin for spacing */
+      margin-right: 20%; /* Right margin for spacing */
     }
   }
 }
 
+/* Styles for project images */
 .app__work-img {
-  width: 100%;
-  height: 230px; // Default height for PC view
-  position: relative;
+  width: 100%; /* Full width */
+  height: 230px; /* Default height for PC view */
+  position: relative; /* Relative positioning */
 
+  /* Image style */
   img {
-    width: 100%;
-    height: 100%;
-    border-radius: 0.5rem;
-    object-fit: cover;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    border-radius: 0.5rem; /* Rounded corners */
+    object-fit: cover; /* Maintain aspect ratio and cover */
   }
 
+  /* Very large screens */
   @media screen and (min-width: 2000px) {
-    height: 350px; // Height for very large screens (like 4K)
+    height: 350px; /* Adjusted height for very large screens */
   }
-
-  //Tablet view
-  // @media screen and (max-width: 768px) {
-  //   height: 200px; // Height for tablet view
-  // }
-
-  //Mobile view
-  // @media screen and (max-width: 480px) {
-  //   height: 140px; // Height for mobile view
-  // }
 }
 
-// Styles for the hover effect on project images
+/* Styles for hover effect on project images */
 .app__work-hover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 0.5rem;
-  opacity: 0;
-  transition: all 0.3s ease;
+  position: absolute; /* Absolute positioning */
+  top: 0; /* Align to top */
+  left: 0; /* Align to left */
+  bottom: 0; /* Align to bottom */
+  right: 0; /* Align to right */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  border-radius: 0.5rem; /* Rounded corners */
+  opacity: 0; /* Initially transparent */
+  transition: all 0.3s ease; /* Smooth transition effect */
 
+  /* Content within hover effect */
   div {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    margin: 1rem;
-    font-family: var(--font-base);
-    font-weight: 800;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    width: 50px; /* Width of inner element */
+    height: 50px; /* Height of inner element */
+    border-radius: 50%; /* Circular shape */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #fff; /* Text color */
+    margin: 1rem; /* Margin around element */
+    font-family: var(--font-base); /* Font family */
+    font-weight: 800; /* Bold font weight */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition effect */
 
+    /* Icon style */
     svg {
-      width: 50%;
-      height: 50%;
-      color: var(--white-color);
+      width: 50%; /* Size of SVG icon */
+      height: 50%; /* Size of SVG icon */
+      color: var(--white-color); /* Icon color */
     }
   }
 }
 
+/* Styles for project content */
 .app__work-content {
-  padding: 0.5rem;
-  width: 100%;
-  position: relative;
-  flex-direction: column;
+  padding: 0.5rem; /* Padding around content */
+  width: 100%; /* Full width */
+  position: relative; /* Relative positioning */
+  flex-direction: column; /* Stack children vertically */
 
+  /* Project title style */
   h4 {
-    margin-top: 1rem;
-    line-height: 1.5;
+    margin-top: 1rem; /* Top margin */
+    line-height: 1.5; /* Line height */
 
+    /* Very large screens */
     @media screen and (min-width: 2000px) {
-      margin-top: 3rem; // Margin top for very large screens (like 4K)
+      margin-top: 3rem; /* Adjusted top margin for very large screens */
     }
   }
 
-  // Styles for the tags indicating technologies used in projects (e.g., React, Java)
+  /* Tags indicating technologies used in projects */
   .app__work-tag {
-    position: absolute;
-    padding: 0.5rem 1rem;
-    border-radius: 10px;
-    background-color: var(--primary-color);
-    color: var(--prussianBlue-color);
-    top: -25px;
+    position: absolute; /* Absolute positioning */
+    padding: 0.5rem 1rem; /* Padding around tag */
+    border-radius: 10px; /* Rounded corners */
+    background-color: var(--primary-color); /* Background color */
+    color: var(--prussianBlue-color); /* Text color */
+    top: -25px; /* Offset from top */
   }
 }

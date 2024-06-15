@@ -1,18 +1,20 @@
 /* Styles for the footer section */
+
+/* Main footer container */
 .app__footer {
   flex: 1;                     /* Allow the footer to grow and fill available space */
   width: 100%;                 /* Full width of the container */
   flex-direction: column;      /* Default layout direction is column */
 
-  /* tablet view */
+  /* Tablet view */
   @media screen and (max-width: 768px) {
     flex-direction: column;   /* column layout */
   }
 
-  //Mobile view
+  /* Mobile view */
   @media screen and (max-width: 450px) {
-    margin-right: 12%;
-    margin-left: 8%;
+    margin-right: 12%;        /* Adjusted right margin for small screens */
+    margin-left: 8%;          /* Adjusted left margin for small screens */
   } 
 }
 
@@ -25,6 +27,7 @@
   flex-wrap: wrap;             /* Wrap the cards if they overflow */
   margin: 4em 2rem 2rem;       /* Margin around the card container */
 
+  /* Individual card style */
   .app__footer-card {
     min-width: 290px;          /* Minimum width for each card */
     display: flex;
@@ -38,33 +41,37 @@
     background-color: var(--lightGray-color); /* Background color */
     transition: all 0.3s ease-in-out; /* Smooth transition for changes */
 
+    /* Image style within the card */
     img {
       width: 40px;
       height: 40px;
       margin: 0 0.7rem;        /* Margin around the image */
     }
 
+    /* Text style within the card */
     p, a {
       font-weight: 500;        /* Font weight for paragraph and anchor text */
     }
 
+    /* Link style within the card */
     a {
       text-decoration: none;   /* Remove underline from links */
     }
 
+    /* Hover effect */
     &:hover {
       box-shadow: 0 0 25px #fef4f5; /* Shadow on hover */
     }
 
-    //Mobile view
+    /* Mobile view adjustments */
     @media screen and (max-width: 450px) {
-      margin-left:10%;
-      margin-right:60%;
-      padding-left:0;
-      padding-right:0;
-      padding-top:1rem;
-      padding-bottom:1rem;
-      flex-direction: column;  
+      margin-left: 10%;        /* Adjusted left margin */
+      margin-right: 60%;       /* Adjusted right margin */
+      padding-left: 0;         /* No padding on left */
+      padding-right: 0;        /* No padding on right */
+      padding-top: 1rem;       /* Top padding */
+      padding-bottom: 1rem;    /* Bottom padding */
+      flex-direction: column;  /* Stack cards vertically */
     }
   }
 
@@ -75,55 +82,57 @@
 
 /* Dark theme styles for footer cards */
 .app__footer-cards__dark {
-  width: 60%;
+  width: 60%;                  /* Large view: 60% width */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  //  margin: 4em 2rem 2rem;            /* Wrap the cards if they overflow */
 
+  /* Individual card style */
   .app__footer-card {
     min-width: 230px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-
     margin: 1rem 0;
     padding: 1rem;
     border-radius: 10px;
     cursor: pointer;
     background-color: #fef4f5;
-
     transition: all 0.3s ease-in-out;
 
+    /* Image style within the card */
     img {
       width: 40px;
       height: 40px;
       margin: 0 0.7rem;        /* Margin around the image */
     }
 
+    /* Text style within the card */
     p, a {
       font-weight: 500;        /* Font weight for paragraph and anchor text */
     }
 
+    /* Link style within the card */
     a {
       text-decoration: none;   /* Remove underline from links */
     }
 
+    /* Hover effect */
     &:hover {
       box-shadow: 0 0 25px #fef4f5; /* Shadow on hover */
     }
 
-    //Mobile view
+    /* Mobile view adjustments */
     @media screen and (max-width: 450px) {
-      margin-left:0%;
-      margin-right:3%;
-      padding-left:0;
-      padding-right:10px;
-      padding-top:1rem;
-      padding-bottom:1rem;
-      flex-direction: row;  
+      margin-left: 0;          /* Adjusted left margin */
+      margin-right: 3%;        /* Adjusted right margin */
+      padding-left: 0;         /* No padding on left */
+      padding-right: 10px;     /* Right padding */
+      padding-top: 1rem;       /* Top padding */
+      padding-bottom: 1rem;    /* Bottom padding */
+      flex-direction: row;     /* Stack cards horizontally */
     }
   }
 
@@ -137,6 +146,7 @@
   background-color: #f2f7fb;   /* Special background for the last card */
 }
 
+/* Hover effect for the last card */
 .app__footer-cards .app__footer-card:last-child:hover {
   box-shadow: 0 0 25px #f2f7fb; /* Hover shadow for the last card */
 }
@@ -147,6 +157,7 @@
   flex-direction: column;
   margin: 1rem 2rem;           /* Margin around the form container */
 
+  /* Individual form element style */
   div {
     width: 100%;               /* Full width for form elements */
     margin: 0.75rem 0;         /* Margin around form elements */
@@ -156,6 +167,7 @@
     transition: all 0.3s ease-in-out; /* Smooth transition for changes */
     text-align: center;        /* Center text in mobile view */
 
+    /* Input and textarea style */
     input, textarea {
       width: 100%;             /* Full width for inputs and textareas */
       padding: 0.95rem;        /* Padding inside form elements */
@@ -167,15 +179,18 @@
       outline: none;           /* Remove outline */
     }
 
+    /* Textarea specific style */
     textarea {
       height: 170px;           /* Fixed height for textarea */
     }
 
+    /* Hover effect */
     &:hover {
       box-shadow: 0 0 25px var(--primary-color); /* Shadow on hover */
     }
   }
 
+  /* Button style */
   button {
     padding: 1rem 2rem;        /* Padding inside button */
     border-radius: 10px;       /* Rounded corners */
@@ -189,16 +204,19 @@
     transition: cubic-bezier(0.55, 0.085, 0.68, 0.53); /* Smooth transition */
     cursor: pointer;           /* Pointer cursor on hover */
 
+    /* Hover effect */
     &:hover {
       background-color: #2430af; /* Background color on hover */
     }
   }
 
+  /* Tablet view adjustments */
   @media screen and (max-width: 768px) {
     width: 100%;               /* Mobile and tablet: Full width */
     margin: 1rem 0;            /* Margin adjustment for small screens */
   }
 
+  /* Very small screens adjustments */
   @media screen and (max-width: 450px) {
     div {
       text-align: center;      /* Center text in very small screens */
@@ -212,6 +230,7 @@
   flex-direction: column;
   margin: 1rem 2rem;           /* Margin around the form container */
 
+  /* Individual form element style */
   div {
     width: 100%;               /* Full width for form elements */
     margin: 0.75rem 0;         /* Margin around form elements */
@@ -221,6 +240,7 @@
     transition: all 0.3s ease-in-out; /* Smooth transition for changes */
     text-align: center;        /* Center text in mobile view */
 
+    /* Input and textarea style */
     input, textarea {
       width: 100%;             /* Full width for inputs and textareas */
       padding: 0.95rem;        /* Padding inside form elements */
@@ -232,15 +252,18 @@
       outline: none;           /* Remove outline */
     }
 
+    /* Textarea specific style */
     textarea {
       height: 170px;           /* Fixed height for textarea */
     }
 
+    /* Hover effect */
     &:hover {
       box-shadow: 0 0 25px var(--primary-color); /* Shadow on hover */
     }
   }
 
+  /* Button style */
   button {
     padding: 1rem 2rem;        /* Padding inside button */
     border-radius: 10px;       /* Rounded corners */
@@ -254,16 +277,19 @@
     transition: cubic-bezier(0.55, 0.085, 0.68, 0.53); /* Smooth transition */
     cursor: pointer;           /* Pointer cursor on hover */
 
+    /* Hover effect */
     &:hover {
       background-color: var(--blueGray-color); /* Background color on hover */
     }
   }
 
+  /* Tablet view adjustments */
   @media screen and (max-width: 768px) {
     width: 100%;               /* Mobile and tablet: Full width */
     margin: 1rem 0;            /* Margin adjustment for small screens */
   }
 
+  /* Very small screens adjustments */
   @media screen and (max-width: 450px) {
     div {
       text-align: center;      /* Center text in very small screens */
@@ -276,7 +302,7 @@
   color: var(--prussianBlue-color); /* Text color */
 }
 
-// Light theme for social section
+/* Light theme for social section */
 .app__SocialContacts__light {
   display: none;
   justify-content: flex-end;
@@ -284,6 +310,7 @@
   flex-direction: column;
   padding: 1rem;
 
+  /* Individual social icon style */
   div {
     width: 40px;
     height: 40px;
@@ -296,27 +323,31 @@
     align-items: center;
     transition: all 0.3s ease-in-out;
 
+    /* Icon style within social icon */
     svg {
       width: 15px;
       height: 15px;
       color: var(--gray-color);
     }
 
+    /* Hover effect */
     &:hover {
       background-color: var(--secondary-color);
       border-color: var(--secondary-color);
 
+      /* Icon color on hover */
       svg {
         color: var(--white-color);
       }
     }
 
-    // Larger screens: Increase size
+    /* Larger screens adjustments */
     @media screen and (min-width: 2000px) {
       width: 70px;
       height: 70px;
       margin: 0.5rem 0;
 
+      /* Larger icon size */
       svg {
         width: 30px;
         height: 30px;
@@ -325,7 +356,7 @@
   }
 }
 
-// Dark theme for social section
+/* Dark theme for social section */
 .app__SocialContacts__dark {
   display: none;
   justify-content: flex-end;
@@ -333,6 +364,7 @@
   flex-direction: row;
   padding: 1rem;
 
+  /* Individual social icon style */
   div {
     width: 40px;
     height: 40px;
@@ -345,27 +377,31 @@
     align-items: center;
     transition: all 0.3s ease-in-out;
 
+    /* Icon style within social icon */
     svg {
       width: 15px;
       height: 15px;
       color: var(--white-color);
     }
 
+    /* Hover effect */
     &:hover {
       background-color: var(--blueGray-color);
       border-color: var(--white-color);
 
+      /* Icon color on hover */
       svg {
         color: var(--white-color);
       }
     }
 
-    // Larger screens: Increase size
+    /* Larger screens adjustments */
     @media screen and (min-width: 2000px) {
       width: 70px;
       height: 70px;
       margin: 0.5rem 0;
 
+      /* Larger icon size */
       svg {
         width: 30px;
         height: 30px;
@@ -374,13 +410,13 @@
   }
 }
 
+/* Social section adjustments for small screens */
 @media screen and (max-width: 480px) {
   .app__SocialContacts__light,
-  .app__SocialContacts__dark
-  {
+  .app__SocialContacts__dark {
     display: flex;
     flex-direction: row;
-    margin-left:2%;
-    margin-right:12%;
+    margin-left: 2%;           /* Adjusted left margin */
+    margin-right: 12%;         /* Adjusted right margin */
   }
 }

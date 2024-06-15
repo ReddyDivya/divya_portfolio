@@ -1,182 +1,188 @@
+// Main container for blogs
 .app__blogs {
-  flex: 1;
-  width: 100%;
-  flex-direction: column;
+  flex: 1; // Occupy remaining space
+  width: 100%; // Occupy full width
+  flex-direction: column; // Arrange items vertically
 
-  //Mobile view
+  // Mobile view adjustments
   @media screen and (max-width: 450px) {
-    margin-right: 3%;
+    margin-right: 3%; // Adjust right margin for small screens
   }
 }
 
-// Light theme styles
+// Light theme styles for blog portfolio
 .app__blog-portfolio__light {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  display: flex; // Use flexbox for layout
+  flex-wrap: wrap; // Wrap items into multiple lines if needed
+  justify-content: center; // Center items horizontally
+  align-items: center; // Center items vertically
 
+  // Individual blog item
   .app__blog-item {
     width: 270px; // Default width for PC view
-    flex-direction: column;
+    flex-direction: column; // Arrange items vertically
     margin: 2rem; // Default margin for PC view
-    padding: 1rem;
-    border-radius: 0.5rem;
-    background-color: var(--lightGray-color);
-    color: var(--gray-color);
-    cursor: pointer;
-    transition: all 0.3s ease;
+    padding: 1rem; // Apply padding
+    border-radius: 0.5rem; // Rounded corners
+    background-color: var(--lightGray-color); // Background color using custom variable
+    color: var(--gray-color); // Text color using custom variable
+    cursor: pointer; // Pointer cursor
+    transition: all 0.3s ease; // Smooth transition effect
 
     &:hover {
-      box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.2); // Add shadow on hover
     }
 
+    // Very large screens (like 4K) adjustments
     @media screen and (min-width: 2000px) {
-      width: 470px; // Width for very large screens (like 4K)
-      padding: 1.25rem;
-      border-radius: 0.75rem;
+      width: 470px; // Width for very large screens
+      padding: 1.25rem; // Adjusted padding
+      border-radius: 0.75rem; // Adjusted border radius
     }
 
+    // Tablet view adjustments
     @media screen and (max-width: 768px) {
       width: 200px; // Width for tablet view
       height: 300px; // Height for tablet view
       margin: 1rem; // Margin for tablet view
     }
 
-    // @media screen and (max-width: 480px) {
-    //   width: 100%; // Width for mobile view
-    //   height: auto; // Adjust height for mobile view
-    //   margin: 1rem; // Margin for mobile view
-    // }
-    
-    //Mobile view
+    // Mobile view adjustments
     @media screen and (max-width: 480px) {
       width: 70%; // Width for mobile view
-      margin-left: 10%;
-      margin-right: 10%;
+      margin-left: 10%; // Adjust left margin for mobile view
+      margin-right: 10%; // Adjust right margin for mobile view
     }
   }
 }
 
-// Dark theme styles
+// Dark theme styles for blog portfolio
 .app__blog-portfolio__dark {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  display: flex; // Use flexbox for layout
+  flex-wrap: wrap; // Wrap items into multiple lines if needed
+  justify-content: center; // Center items horizontally
+  align-items: center; // Center items vertically
 
+  // Individual blog item
   .app__blog-item {
     width: 270px; // Default width for PC view
-    flex-direction: column;
+    flex-direction: column; // Arrange items vertically
     margin: 2rem; // Default margin for PC view
-    padding: 1rem;
-    border-radius: 0.5rem;
-    background-color: var(--darkSlateBlue-color);
-    color: #000;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    padding: 1rem; // Apply padding
+    border-radius: 0.5rem; // Rounded corners
+    background-color: var(--darkSlateBlue-color); // Background color using custom variable
+    color: #000; // Text color
+    cursor: pointer; // Pointer cursor
+    transition: all 0.3s ease; // Smooth transition effect
 
     &:hover {
-      box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.2); // Add shadow on hover
     }
 
+    // Very large screens (like 4K) adjustments
     @media screen and (min-width: 2000px) {
-      width: 470px; // Width for very large screens (like 4K)
-      padding: 1.25rem;
-      border-radius: 0.75rem;
+      width: 470px; // Width for very large screens
+      padding: 1.25rem; // Adjusted padding
+      border-radius: 0.75rem; // Adjusted border radius
     }
 
+    // Tablet view adjustments
     @media screen and (max-width: 768px) {
       width: 200px; // Width for tablet view
       height: 300px; // Height for tablet view
       margin: 1rem; // Margin for tablet view
     }
 
-    // @media screen and (max-width: 480px) {
-    //   width: 100%; // Width for mobile view
-    //   height: auto; // Adjust height for mobile view
-    //   margin: 1rem; // Margin for mobile view
-    // }
-    
-    //Mobile view
+    // Mobile view adjustments
     @media screen and (max-width: 480px) {
       width: 70%; // Width for mobile view
-      margin-left: 10%;
-      margin-right: 10%;
+      margin-left: 10%; // Adjust left margin for mobile view
+      margin-right: 10%; // Adjust right margin for mobile view
     }
   }
 }
 
+// Content styles for individual blog item
 .app__blog-content {
-  padding: 0.5rem;
-  width: 100%;
-  position: relative;
-  flex-direction: column;
+  padding: 0.5rem; // Apply padding
+  width: 100%; // Occupy full width
+  position: relative; // Positioning relative
+  flex-direction: column; // Arrange items vertically
 
+  // Headline style
   h4 {
-    margin-top: 1rem;
-    line-height: 1.5;
+    margin-top: 1rem; // Margin top
+    line-height: 1.5; // Line height
 
+    // Very large screens (like 4K) adjustments
     @media screen and (min-width: 2000px) {
-      margin-top: 3rem; // Margin top for very large screens (like 4K)
+      margin-top: 3rem; // Adjusted margin top for very large screens
     }
   }
 }
 
+// Image container styles for individual blog item
 .app__blog-img {
-  width: 100%;
+  width: 100%; // Occupy full width
   height: 230px; // Default height for PC view
-  position: relative;
+  position: relative; // Positioning relative
 
+  // Image styles
   img {
-    width: 100%;
-    height: 100%;
-    border-radius: 0.5rem;
-    object-fit: cover;
+    width: 100%; // Occupy full width
+    height: 100%; // Occupy full height
+    border-radius: 0.5rem; // Rounded corners
+    object-fit: cover; // Cover mode for image fit
   }
 
+  // Very large screens (like 4K) adjustments
   @media screen and (min-width: 2000px) {
-    height: 350px; // Height for very large screens (like 4K)
+    height: 350px; // Height for very large screens
   }
 
+  // Tablet view adjustments
   @media screen and (max-width: 768px) {
     height: 200px; // Height for tablet view
   }
 
+  // Mobile view adjustments
   @media screen and (max-width: 480px) {
     height: 140px; // Height for mobile view
   }
 }
 
+// Hover effect styles for individual blog item
 .app__blog-hover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 0.5rem;
-  opacity: 0;
-  transition: all 0.3s ease;
+  position: absolute; // Absolute positioning
+  top: 0; // Positioning from top edge
+  left: 0; // Positioning from left edge
+  bottom: 0; // Positioning from bottom edge
+  right: 0; // Positioning from right edge
+  width: 100%; // Occupy full width
+  height: 100%; // Occupy full height
+  background-color: rgba(0, 0, 0, 0.5); // Semi-transparent background
+  border-radius: 0.5rem; // Rounded corners
+  opacity: 0; // Hidden by default
+  transition: all 0.3s ease; // Smooth transition effect
 
+  // Inner content style
   div {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    margin: 1rem;
-    font-family: var(--font-base);
-    font-weight: 800;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    width: 50px; // Width of inner content
+    height: 50px; // Height of inner content
+    border-radius: 50%; // Rounded corners
+    background-color: rgba(0, 0, 0, 0.5); // Semi-transparent background
+    color: #fff; // Text color
+    margin: 1rem; // Margin around inner content
+    font-family: var(--font-base); // Custom font family
+    font-weight: 800; // Font weight
+    cursor: pointer; // Pointer cursor
+    transition: all 0.3s ease; // Smooth transition effect
 
+    // SVG icon style
     svg {
-      width: 50%;
-      height: 50%;
-      color: var(--white-color);
+      width: 50%; // Size of SVG icon
+      height: 50%; // Size of SVG icon
+      color: var(--white-color); // Color using custom variable
     }
   }
 }
