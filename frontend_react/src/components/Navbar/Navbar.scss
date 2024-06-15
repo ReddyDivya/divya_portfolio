@@ -331,7 +331,14 @@
 
 .app__navbar__themeIcon{
   //Mobile view
-  @media screen and (max-width: 450px) {
-    margin-left: 65%;
+  @media screen and (max-width: 760px) {
+    margin-left: -3% !important ;
   }
+}
+
+ //Mobile view
+ @media screen and (max-width: 450px) {
+    .app__navbar__themeIcon{
+        margin-left: -3% !important ;
+    }
 }

@@ -9,10 +9,11 @@
     flex-direction: column;   /* column layout */
   }
 
-  //Mobile view:No need
-  // @media screen and (max-width: 450px) {
-
-  // }  
+  //Mobile view
+  @media screen and (max-width: 450px) {
+    margin-right: 12%;
+    margin-left: 8%;
+  } 
 }
 
 /* Light theme styles for footer cards */
@@ -79,10 +80,10 @@
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  margin: 4em 2rem 2rem;            /* Wrap the cards if they overflow */
+  //  margin: 4em 2rem 2rem;            /* Wrap the cards if they overflow */
 
   .app__footer-card {
-    min-width: 290px;
+    min-width: 230px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -116,13 +117,13 @@
 
     //Mobile view
     @media screen and (max-width: 450px) {
-      margin-left:10%;
-      margin-right:60%;
+      margin-left:0%;
+      margin-right:3%;
       padding-left:0;
-      padding-right:0;
+      padding-right:10px;
       padding-top:1rem;
       padding-bottom:1rem;
-      flex-direction: column;  
+      flex-direction: row;  
     }
   }
 

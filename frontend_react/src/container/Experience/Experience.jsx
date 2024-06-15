@@ -24,7 +24,7 @@ const Experience = () => {
   return (
     <>
       {/* Dynamic heading based on the current theme */}
-      <h2 className={`head-text__${theme}`}>Work Experience</h2>
+      <h2 className={`head-text__${theme}`}>Experience</h2>
       
       <div className="app__experience">
         {experiences.map((experience, index) => (

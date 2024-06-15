@@ -57,9 +57,9 @@ const Navbar = () => {
               ))}
 
               {/*Light & Dark themes */}
-              <li className={`app__navbar__themeIcon p-text__${theme}`} onClick={toggleMode}>
+              <li className={`p-text__${theme}`} onClick={toggleMode}>
               {
-                theme === "dark" ? <MdLightMode style={{ color: '#ffffff' }} /> : <MdDarkMode style={{ color: '#B8B8B8' }} />
+                theme === "dark" ? <MdLightMode className="app__navbar__themeIcon" style={{ color: '#ffffff' }} /> : <MdDarkMode className="app__navbar__themeIcon" style={{ color: '#B8B8B8' }} />
               }
               </li>
             </ul>
