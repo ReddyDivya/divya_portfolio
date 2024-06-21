@@ -55,24 +55,23 @@
 ## Screenshots
 
 ### Dark Mode
-
-    ![alt text](image-1.png)
-    ![alt text](image-2.png)
-    ![alt text](image-3.png)
-    ![alt text](image-4.png)
-    ![alt text](image-5.png)
-    ![alt text](image-6.png)
-    ![alt text](image-7.png)
+    ![image-1](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/d454af77-e301-44ce-b455-4a78d940d9ff)
+    ![image-2](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/bf472ed8-21d6-4ff7-87f1-fd4ef4de5f85)    
+    ![image-3](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/7f7da10d-fe7b-4063-a2b6-d96ff8b2d997)
+    ![image-4](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/81f28b8e-147e-4c96-9400-b951be8c0376)
+    ![image-5](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/30c2aca0-1cab-4f96-8992-93c84647cba9)
+    ![image-6](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/cd566424-e4ad-40fe-9f9d-3506d7bd3b97)
+    ![image-7](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/b23edd53-c563-4ae8-9bd1-3225171f6a0a)
 
 ### Light Mode
 
-    ![alt text](image-8.png)
-    ![alt text](image-9.png)
-    ![alt text](image-10.png)
-    ![alt text](image-11.png)
-    ![alt text](image-12.png)
-    ![alt text](image-13.png)
-    ![alt text](image-14.png)
+![image-9](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/245580e0-409e-4fca-b8f1-8d0989600995)
+![image-8](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/7b113858-4408-4ea8-a912-202468534355)
+![image-14](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/32a7e5fd-4167-45fe-86c2-73a3a0195c2f)
+![image-13](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/6f315729-6bb5-4cbf-b63d-cb1273b34bd8)
+![image-12](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/b4fa8bfa-8094-4c8d-a489-c03458698508)
+![image-11](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/24bc7c39-f6f1-4ce2-89cf-366002268b16)
+![image-10](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/edcb22e8-ac03-4e10-9460-19e85425a5a4)
 
 ## Technologies
 
