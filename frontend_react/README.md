@@ -12,12 +12,12 @@
     - Work Experience
     - Projects Show Case
     - Technical Skills
-    - Contact Form
+    - Contact
     - Responsive Design
 
 ## Demo
 
-    Check out the live demo [here](https://reddy-divya-portfolio.netlify.app/)
+    Check out the live demo [My Portfolio](https://reddy-divya-portfolio.netlify.app/)
 
 ## Installation
 
@@ -60,12 +60,13 @@
     - React Router Dom
     - Node.js
     - Sanity
-    - SCSS
+    - CSS
     - Styled Components
     - HTML5
+    - React Icons
 
 ## Contact
 
 Email: divyareddy0205@gmail.com
-LinkedIn: https://www.linkedin.com/in/reddy-divya-58025a12b/
+LinkedIn: [Reddy Divya](https://www.linkedin.com/in/reddy-divya-58025a12b/)
 Twitter: [@thedivyareddyy](https://x.com/thedivyareddyy)
