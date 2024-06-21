@@ -55,13 +55,15 @@
 ## Screenshots
 
 ### Dark Mode
-    ![image-1](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/d454af77-e301-44ce-b455-4a78d940d9ff)
-    ![image-2](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/bf472ed8-21d6-4ff7-87f1-fd4ef4de5f85)    
-    ![image-3](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/7f7da10d-fe7b-4063-a2b6-d96ff8b2d997)
-    ![image-4](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/81f28b8e-147e-4c96-9400-b951be8c0376)
-    ![image-5](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/30c2aca0-1cab-4f96-8992-93c84647cba9)
-    ![image-6](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/cd566424-e4ad-40fe-9f9d-3506d7bd3b97)
-    ![image-7](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/b23edd53-c563-4ae8-9bd1-3225171f6a0a)
+
+![image-1](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/1ec9fabb-86be-47e5-baa0-9bf8d54ed278)
+![image-2](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/17121ca9-9dea-493b-a8b4-02acaa97c82a)
+![image-3](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/9739ecae-1792-4b91-bcae-d26ed05c4d72)
+![image-4](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/ed91685d-7c38-4924-9315-632efb4aa9e2)
+![image-5](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/74cd48f9-b747-4775-bd92-382cfa508db9)
+![image-6](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/bd89ce82-116d-467c-9ea0-49a687ce8621)
+![image-7](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/443d45ce-aaa7-4231-be52-4d190d599d80)
+
 
 ### Light Mode
 
