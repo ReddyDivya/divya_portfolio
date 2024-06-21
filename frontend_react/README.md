@@ -56,23 +56,24 @@
 
 ### Dark Mode
 
-    ![alt text](image-1.png)
-    ![alt text](image-2.png)
-    ![alt text](image-3.png)
-    ![alt text](image-4.png)
-    ![alt text](image-5.png)
-    ![alt text](image-6.png)
-    ![alt text](image-7.png)
+![image-1](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/1ec9fabb-86be-47e5-baa0-9bf8d54ed278)
+![image-2](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/17121ca9-9dea-493b-a8b4-02acaa97c82a)
+![image-3](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/9739ecae-1792-4b91-bcae-d26ed05c4d72)
+![image-4](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/ed91685d-7c38-4924-9315-632efb4aa9e2)
+![image-5](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/74cd48f9-b747-4775-bd92-382cfa508db9)
+![image-6](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/bd89ce82-116d-467c-9ea0-49a687ce8621)
+![image-7](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/443d45ce-aaa7-4231-be52-4d190d599d80)
+
 
 ### Light Mode
 
-    ![alt text](image-8.png)
-    ![alt text](image-9.png)
-    ![alt text](image-10.png)
-    ![alt text](image-11.png)
-    ![alt text](image-12.png)
-    ![alt text](image-13.png)
-    ![alt text](image-14.png)
+![image-9](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/245580e0-409e-4fca-b8f1-8d0989600995)
+![image-8](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/7b113858-4408-4ea8-a912-202468534355)
+![image-14](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/32a7e5fd-4167-45fe-86c2-73a3a0195c2f)
+![image-13](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/6f315729-6bb5-4cbf-b63d-cb1273b34bd8)
+![image-12](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/b4fa8bfa-8094-4c8d-a489-c03458698508)
+![image-11](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/24bc7c39-f6f1-4ce2-89cf-366002268b16)
+![image-10](https://github.com/ReddyDivya/divya_portfolio/assets/34181144/edcb22e8-ac03-4e10-9460-19e85425a5a4)
 
 ## Technologies
 
